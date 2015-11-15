@@ -1,0 +1,46 @@
+html {
+  background-color: rgb(248,248,248);
+  font-size: 16px;
+}
+
+body {
+  width: 80%;
+  max-width: 900px;
+  margin: 4rem auto 0;
+  padding-bottom: 4rem;
+
+  font-family: $family-body;
+}
+
+h1, h2, h3 {
+  font-family: $family-heading;
+}
+
+h4, h5 {
+  font-family: $family-script;
+}
+
+// Main view animation
+@-webkit-keyframes pageIn {
+  0% {
+    opacity: 0;
+    //-webkit-transform: translateY(-0.75rem);
+    //transform: translateY(-0.75rem);
+    -webkit-transform: scale(0.94);
+    transform: scale(0.94);
+  }
+
+  100% {
+    opacity: 1;
+    //-webkit-transform: translateY(0);
+    //transform: translateY(0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.animated-view {
+  &.ng-enter {
+    animation: 0.35s pageIn ease-out;
+    -webkit-animation: 0.35s pageIn ease-out;
+  }
+}

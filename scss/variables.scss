@@ -1,0 +1,19 @@
+// Colors
+$blue: #009DFF;
+$green: #2BB972;
+$orange: #f56c4a;
+$gold: #f4b145;
+$yellow: #E8A631;
+$red: #DD0A17;
+$purple: #4c296d;
+
+$face-script: "grafolita-script";
+$face-heading: "jubilat";
+$face-body: "ff-tisa-web-pro";
+
+$family-script: $face-script;
+$family-heading: $face-heading, 'Garamond', 'Times New Roman', 'Times', serif;
+$family-body: $face-body, 'Palatino', 'Book Antiqua', 'Times', serif;
+
+@import 'base';
+@import 'components';

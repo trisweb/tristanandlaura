@@ -1,0 +1,36 @@
+{
+  "name": "tristanandlaura",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "Tristan Harward <trisweb@gmail.com>",
+  "description": "Tristan and Laura's Wedding",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/trisweb/tristanandlaura.git"
+  },
+  "contributors": [
+    {
+      "name": "Tristan Harward",
+      "email": "trisweb@gmail.com"
+    }
+  ],
+  "keywords": [
+  ],
+  "analyze": false,
+  "engines": {
+    "node": "5.0.0"
+  },
+  "devDependencies": {
+    "bower": "",
+    "colors": "",
+    "gulp": "",
+    "main-bower-files": "",
+    "gulp-concat": "",
+    "gulp-livereload": "",
+    "gulp-notify": "",
+    "gulp-sass": "",
+    "gulp-uglify": "",
+    "gulp-remove-empty-lines": "",
+    "gulp-shell": ""
+  }
+}
