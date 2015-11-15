@@ -38,7 +38,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('deploy', shell.task([
-	'scp -r css img js index.html trisweb@trisweb.com:/srv/www/tristanandlaura/'
+	'rsync -azP css img js index.html trisweb@trisweb.com:/srv/www/tristanandlaura/'
 ]));
 
 gulp.task('default', ['styles', 'watch']);
