@@ -1,0 +1,27 @@
+// Colors
+$purple: rgb(117, 63, 105);
+$pale-purple: desaturate($purple, 22%);
+$dark-purple: desaturate(darken($purple, 12%), 22%);
+$light-purple: lighten($purple, 60%); // Looking for rgb(251, 234, 247);
+
+// Flourish/fancy script typeface
+$face-script: "grafolita-script";
+
+// Headings typeface
+$face-heading: "jubilat";
+
+// Main body typeface
+// Other options: 
+//   ff-meta-web-pro
+//   ff-tisa-web-pro
+//   prenton
+//   alber-new-web
+//   rosario
+$face-body: "rosario"; 
+
+$family-heading: $face-heading, 'Garamond', 'Times New Roman', 'Times', serif;
+$family-script: $face-script, $family-heading;
+$family-body: $face-body, 'San Francisco Display', 'Helvetica', 'Lucida Grande', Arial, sans-serif;
+
+@import 'base';
+@import 'components';

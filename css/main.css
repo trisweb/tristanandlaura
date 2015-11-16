@@ -1,0 +1,52 @@
+html {
+  background-color: #f7eff5;
+  font-size: 16px; }
+body {
+  width: 80%;
+  max-width: 700px;
+  margin: 4rem auto 0;
+  padding-bottom: 4rem;
+  font-family: "rosario", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif; }
+h1, h2, h3 {
+  font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
+  color: #40373e; }
+  h1.script, h2.script, h3.script {
+    font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
+    color: #753f69; }
+h1 {
+  font-weight: 300;
+  font-size: 3rem; }
+h2 {
+  font-weight: 300;
+  font-size: 2rem; }
+h3 {
+  font-weight: 600;
+  font-size: 1.3rem; }
+h4, h5 {
+  font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif; }
+blockquote {
+  font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif; }
+  blockquote p {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.5em;
+    line-height: 1.4em; }
+  blockquote footer {
+    font-weight: 200;
+    color: #753f69;
+    font-size: 1.3em; }
+p {
+  line-height: 1.4em;
+  color: #61535e; }
+@-webkit-keyframes pageIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.94);
+    transform: scale(0.94); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+.animated-view.ng-enter {
+  animation: 0.35s pageIn ease-out;
+  -webkit-animation: 0.35s pageIn ease-out; }
