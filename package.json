@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "author": "Tristan Harward <trisweb@gmail.com>",
   "description": "Tristan and Laura's Wedding",
+  "license": "BSD",
   "repository": {
     "type": "git",
     "url": "git://github.com/trisweb/tristanandlaura.git"
@@ -31,6 +32,7 @@
     "gulp-sass": "",
     "gulp-uglify": "",
     "gulp-remove-empty-lines": "",
-    "gulp-shell": ""
+    "gulp-shell": "",
+    "node-static": ""
   }
 }

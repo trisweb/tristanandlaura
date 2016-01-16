@@ -1,15 +1,38 @@
 html {
   background-color: $light-purple;
   font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 body {
+  font-family: $family-body;
+  padding: 0;
+  margin: 0;
+}
+
+main {
   width: 80%;
   max-width: 700px;
   margin: 4rem auto 0;
   padding-bottom: 4rem;
+}
 
-  font-family: $family-body;
+header {
+  background-color: $purple;
+  padding: 0;
+  margin: 0;
+
+  section {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+  h1 {
+    color: white;
+    margin: 0;
+  }
 }
 
 h1, h2, h3 {
@@ -21,7 +44,7 @@ h1, h2, h3 {
   }
 }
 
-h1 { 
+h1 {
   font-weight: 300;
   font-size: 3rem;
 }
@@ -58,6 +81,7 @@ p {
   color: $pale-purple;
 }
 
+
 // Main view animation
 @-webkit-keyframes pageIn {
   0% {
@@ -81,4 +105,11 @@ p {
     animation: 0.35s pageIn ease-out;
     -webkit-animation: 0.35s pageIn ease-out;
   }
+}
+// Load after typekit
+.wf-loading .animated-view {
+  display: none;
+}
+.wf-active .animated-view {
+  display: block;
 }

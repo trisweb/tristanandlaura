@@ -1,1 +1,9 @@
 $timing: cubic-bezier(0, 0.78, 0.4, 0.95);
+
+.countdown {
+  font-size: 1.4rem;
+  strong {
+    font-size: 2rem;
+    color: $purple;
+  }
+}

@@ -1,18 +1,35 @@
 html {
-  background-color: #f7eff5;
-  font-size: 16px; }
+  background-color: white;
+  font-size: 16px;
+  padding: 0;
+  margin: 0; }
 body {
+  font-family: "jubilat", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif;
+  padding: 0;
+  margin: 0; }
+main {
   width: 80%;
   max-width: 700px;
   margin: 4rem auto 0;
-  padding-bottom: 4rem;
-  font-family: "rosario", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif; }
+  padding-bottom: 4rem; }
+header {
+  background-color: #c74d7e;
+  padding: 0;
+  margin: 0; }
+  header section {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 0; }
+  header h1 {
+    color: white;
+    margin: 0; }
 h1, h2, h3 {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
-  color: #40373e; }
+  color: #c74d7e; }
   h1.script, h2.script, h3.script {
     font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
-    color: #753f69; }
+    color: #c74d7e; }
 h1 {
   font-weight: 300;
   font-size: 3rem; }
@@ -33,11 +50,11 @@ blockquote {
     line-height: 1.4em; }
   blockquote footer {
     font-weight: 200;
-    color: #753f69;
+    color: #c74d7e;
     font-size: 1.3em; }
 p {
   line-height: 1.4em;
-  color: #61535e; }
+  color: #c74d7e; }
 @-webkit-keyframes pageIn {
   0% {
     opacity: 0;
@@ -50,3 +67,12 @@ p {
 .animated-view.ng-enter {
   animation: 0.35s pageIn ease-out;
   -webkit-animation: 0.35s pageIn ease-out; }
+.wf-loading .animated-view {
+  display: none; }
+.wf-active .animated-view {
+  display: block; }
+.countdown {
+  font-size: 1.4rem; }
+  .countdown strong {
+    font-size: 2rem;
+    color: #c74d7e; }

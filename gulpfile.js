@@ -7,6 +7,8 @@ var uglify = require('gulp-uglify');
 var colors = require('colors');
 var removeEmptyLines = require('gulp-remove-empty-lines');
 var shell = require('gulp-shell');
+var nodeStatic = require('node-static');
+var http = require('http');
 
 var errorHandler = function(err) {
 	console.log("[SASS Error]".yellow + " " + err.toString().red);
@@ -17,7 +19,7 @@ gulp.task('bower-files', function() {
 		.pipe(concat('vendor.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('js'));
-		
+
 	gulp.src(mainBowerFiles({ filter: /.*\.css$/i }))
 		.pipe(concat('vendor.css'))
 		.pipe(gulp.dest('css'));
@@ -38,7 +40,20 @@ gulp.task('watch', function() {
 });
 
 gulp.task('deploy', shell.task([
-	'rsync -azP css img js index.html trisweb@trisweb.com:/srv/www/tristanandlaura/'
+	'rsync -azP css img js *.html trisweb@trisweb.com:/srv/www/tristanandlaura/'
 ]));
 
-gulp.task('default', ['styles', 'watch']);
+gulp.task('static', function(){
+  // static server
+  var file = new nodeStatic.Server('./', {
+    cache: 3600,
+    gzip: true
+  });
+  http.createServer(function (request, response){
+    request.addListener('end', function(){
+      file.serve(request, response);
+    }).resume();
+  }).listen( 8000 );
+});
+
+gulp.task('default', ['static', 'styles', 'watch']);
