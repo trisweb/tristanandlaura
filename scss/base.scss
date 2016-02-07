@@ -38,6 +38,8 @@ header {
 h1, h2, h3 {
   font-family: $family-heading;
   color: $dark-purple;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
   &.script {
     font-family: $family-script;
     color: $purple;

@@ -1,8 +1,8 @@
 // Main App
 // This will have to be merged back with the stuff at home...
 var app = angular.module('Love', [
-    'ngRoute', 'ngAnimate'
-  ])
+  'ngRoute', 'ngAnimate', 'slick'
+])
 
 // Controllers
 .controller('Main', function($scope, $rootScope, $document, $timeout, $location) {

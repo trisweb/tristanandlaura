@@ -1,4 +1,6 @@
-app.directive('countdown', function($interval) {
+app
+
+.directive('countdown', function($interval) {
   return {
     restrict: 'EA',
     replace: true,
@@ -28,6 +30,15 @@ app.directive('countdown', function($interval) {
       }, 1000);
 
     }
+  }
+})
+
+.directive('navigation', function($interval) {
+  return {
+    restrict: 'EA',
+    replace: true,
+    templateUrl: 'js/templates/navigation.html',
+    controller: function($scope, $element) { }
   }
 })
 

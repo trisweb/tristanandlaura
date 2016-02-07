@@ -1,3 +1,7 @@
+// Slick
+@import 'slick';
+@import 'slick-theme';
+
 // Colors
 $purple: rgb(199, 77, 126);
 $pale-purple: $purple;
@@ -12,16 +16,15 @@ $face-heading: "jubilat";
 
 // Main body typeface
 // Other options:
-//   ff-meta-web-pro
-//   ff-tisa-web-pro
 //   prenton
 //   alber-new-web
 //   rosario
-$face-body: "jubilat";
+$face-body: "prenton";
 
 $family-heading: $face-heading, 'Garamond', 'Times New Roman', 'Times', serif;
 $family-script: $face-script, $family-heading;
 $family-body: $face-body, 'San Francisco Display', 'Helvetica', 'Lucida Grande', Arial, sans-serif;
+$family-sans: $family-body;
 
 @import 'base';
 @import 'components';
