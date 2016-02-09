@@ -1,11 +1,7 @@
-// Slick
-@import 'slick';
-@import 'slick-theme';
-
 // Colors
 $purple: rgb(199, 77, 126);
 $pale-purple: $purple;
-$dark-purple: $purple; //desaturate(darken($purple, 12%), 22%);
+$darker-purple: darken($purple, 8%);
 $light-purple: lighten($purple, 63%); // Looking for rgb(251, 234, 247);
 
 // Flourish/fancy script typeface

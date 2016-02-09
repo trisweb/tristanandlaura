@@ -9,8 +9,16 @@ $timing: cubic-bezier(0, 0.78, 0.4, 0.95);
 }
 
 nav {
+  background-color: $purple;
+  position: fixed;
+  z-index: 1001;
+  box-shadow: 0 0.2rem 0.5rem -0.2rem fade-out($darker-purple, 0.25);
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   margin: 0;
+  min-height: 2.3rem;
   ul {
     display: inline-block;
     padding: 0;
@@ -19,7 +27,7 @@ nav {
       display: inline;
       a {
         display: inline-block;
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 1rem 0.5rem;
         text-transform: uppercase;
         font-family: $family-sans;
         color: white;
@@ -34,6 +42,77 @@ nav {
           color: $purple;
         }
       }
+    }
+  }
+
+  a.menu {
+    height: 0;
+    position: absolute;
+    right: 1rem;
+    top: 0.55rem;
+    img {
+      width: 1.2rem;
+    }
+  }
+}
+
+// Media queries
+@media screen and (max-width: 640px) {
+  nav {
+    a.menu {
+      display: block !important;
+    }
+    ul {
+      display: none;
+    }
+  }
+}
+
+@keyframes kenburns {
+  0% {
+      transform: scale(1.5, 1.5) translate(-8%, -4%);
+      animation-timing-function: ease-in-out;
+  }
+  100% {
+      transform: scale(1.25, 1.25) translate(5%, 7%);
+  }
+}
+
+.image-carousel {
+  border: 1rem solid #F2F2F2;
+  background-color: #F2F2F2;
+  box-shadow: 0 0.5rem 1rem -0.6rem #aaa;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+
+  img {
+    margin-bottom: -0.5rem;
+    width: 100%;
+
+    // ng-animate
+    transition: all 2s ease-in-out;
+    &.ng-hide-add, &.ng-hide-remove {
+      display: block !important;
+      opacity: 1;
+    }
+    &.ng-hide {
+      opacity: 0;
+    }
+
+    &.img-primary {
+      // Animate in and across
+      animation: kenburns 20s ease-in-out infinite alternate;
+      -webkit-animation: kenburns 20s ease-in-out infinite alternate;
+    }
+    &.img-secondary {
+      position: absolute;
+      top: 0;
+      left: 0;
+      // Animate out and across
+      animation: kenburns 20s ease-in-out infinite alternate-reverse;
+      -webkit-animation: kenburns 20s ease-in-out infinite alternate-reverse;
     }
   }
 }

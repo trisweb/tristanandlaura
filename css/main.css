@@ -1,189 +1,3 @@
-@charset "UTF-8";
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent; }
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0; }
-  .slick-list:focus {
-    outline: none; }
-  .slick-list.dragging {
-    cursor: pointer;
-    cursor: hand; }
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-.slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
-  display: block; }
-  .slick-track:before, .slick-track:after {
-    content: "";
-    display: table; }
-  .slick-track:after {
-    clear: both; }
-  .slick-loading .slick-track {
-    visibility: hidden; }
-.slick-slide {
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  display: none; }
-  [dir="rtl"] .slick-slide {
-    float: right; }
-  .slick-slide img {
-    display: block; }
-  .slick-slide.slick-loading img {
-    display: none; }
-  .slick-slide.dragging img {
-    pointer-events: none; }
-  .slick-initialized .slick-slide {
-    display: block; }
-  .slick-loading .slick-slide {
-    visibility: hidden; }
-  .slick-vertical .slick-slide {
-    display: block;
-    height: auto;
-    border: 1px solid transparent; }
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
-/* Icons */
-@font-face {
-  font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* Arrows */
-.slick-prev,
-.slick-next {
-  position: absolute;
-  display: block;
-  height: 20px;
-  width: 20px;
-  line-height: 0px;
-  font-size: 0px;
-  cursor: pointer;
-  background: transparent;
-  color: transparent;
-  top: 50%;
-  margin-top: -10px;
-  padding: 0;
-  border: none;
-  outline: none; }
-  .slick-prev:hover, .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus {
-    outline: none;
-    background: transparent;
-    color: transparent; }
-    .slick-prev:hover:before, .slick-prev:focus:before,
-    .slick-next:hover:before,
-    .slick-next:focus:before {
-      opacity: 1; }
-  .slick-prev.slick-disabled:before,
-  .slick-next.slick-disabled:before {
-    opacity: 0.25; }
-.slick-prev:before, .slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-  color: white;
-  opacity: 0.75;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-.slick-prev {
-  left: -25px; }
-  [dir="rtl"] .slick-prev {
-    left: auto;
-    right: -25px; }
-  .slick-prev:before {
-    content: "←"; }
-    [dir="rtl"] .slick-prev:before {
-      content: "→"; }
-.slick-next {
-  right: -25px; }
-  [dir="rtl"] .slick-next {
-    left: -25px;
-    right: auto; }
-  .slick-next:before {
-    content: "→"; }
-    [dir="rtl"] .slick-next:before {
-      content: "←"; }
-/* Dots */
-.slick-slider {
-  margin-bottom: 30px; }
-.slick-dots {
-  position: absolute;
-  bottom: -45px;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0;
-  width: 100%; }
-  .slick-dots li {
-    position: relative;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer; }
-    .slick-dots li button {
-      border: 0;
-      background: transparent;
-      display: block;
-      height: 20px;
-      width: 20px;
-      outline: none;
-      line-height: 0px;
-      font-size: 0px;
-      color: transparent;
-      padding: 5px;
-      cursor: pointer; }
-      .slick-dots li button:hover, .slick-dots li button:focus {
-        outline: none; }
-        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
-          opacity: 1; }
-      .slick-dots li button:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "•";
-        width: 20px;
-        height: 20px;
-        font-family: "slick";
-        font-size: 6px;
-        line-height: 20px;
-        text-align: center;
-        color: black;
-        opacity: 0.25;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; }
-    .slick-dots li.slick-active button:before {
-      color: black;
-      opacity: 0.75; }
 html {
   background-color: white;
   font-size: 16px;
@@ -196,10 +10,11 @@ body {
 main {
   width: 80%;
   max-width: 700px;
-  margin: 4rem auto 0;
+  margin: 2rem auto 0;
   padding-bottom: 4rem; }
 header {
-  background-color: #c74d7e;
+  background-color: #b3386a;
+  height: 42px;
   padding: 0;
   margin: 0; }
   header section {
@@ -212,7 +27,7 @@ header {
     margin: 0; }
 h1, h2, h3 {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
-  color: #c74d7e;
+  color: #b3386a;
   margin-bottom: 0.2em;
   margin-top: 0.2em; }
   h1.script, h2.script, h3.script {
@@ -246,18 +61,21 @@ p {
 @-webkit-keyframes pageIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0.94);
-    transform: scale(0.94); }
+    -webkit-transform: translateY(-0.75rem);
+    transform: translateY(-0.75rem); }
   100% {
     opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-.animated-view.ng-enter {
-  animation: 0.35s pageIn ease-out;
-  -webkit-animation: 0.35s pageIn ease-out; }
-.wf-loading .animated-view {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+.animated-view {
+  -webkit-transform-origin: top center;
+  transform-origin: top center; }
+  .animated-view.ng-enter {
+    animation: 0.35s pageIn ease-out;
+    -webkit-animation: 0.35s pageIn ease-out; }
+.wf-loading .animated-view, .wf-loading body > header {
   display: none; }
-.wf-active .animated-view {
+.wf-active .animated-view .animated-view, .wf-active .animated-view body > header {
   display: block; }
 .countdown {
   font-size: 1.4rem; }
@@ -265,8 +83,16 @@ p {
     font-size: 2rem;
     color: #c74d7e; }
 nav {
+  background-color: #c74d7e;
+  position: fixed;
+  z-index: 1001;
+  box-shadow: 0 0.2rem 0.5rem -0.2rem rgba(179, 56, 106, 0.75);
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  min-height: 2.3rem; }
   nav ul {
     display: inline-block;
     padding: 0;
@@ -275,7 +101,7 @@ nav {
       display: inline; }
       nav ul li a {
         display: inline-block;
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 1rem 0.5rem;
         text-transform: uppercase;
         font-family: "prenton", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif;
         color: white;
@@ -287,3 +113,47 @@ nav {
         nav ul li a:hover {
           background-color: rgba(255, 255, 255, 0.7);
           color: #c74d7e; }
+  nav a.menu {
+    height: 0;
+    position: absolute;
+    right: 1rem;
+    top: 0.55rem; }
+    nav a.menu img {
+      width: 1.2rem; }
+@media screen and (max-width: 640px) {
+  nav a.menu {
+    display: block !important; }
+  nav ul {
+    display: none; } }
+@keyframes kenburns {
+  0% {
+    transform: scale(1.5, 1.5) translate(-8%, -4%);
+    animation-timing-function: ease-in-out; }
+  100% {
+    transform: scale(1.25, 1.25) translate(5%, 7%); } }
+.image-carousel {
+  border: 1rem solid #F2F2F2;
+  background-color: #F2F2F2;
+  box-shadow: 0 0.5rem 1rem -0.6rem #aaa;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem; }
+  .image-carousel img {
+    margin-bottom: -0.5rem;
+    width: 100%;
+    transition: all 2s ease-in-out; }
+    .image-carousel img.ng-hide-add, .image-carousel img.ng-hide-remove {
+      display: block !important;
+      opacity: 1; }
+    .image-carousel img.ng-hide {
+      opacity: 0; }
+    .image-carousel img.img-primary {
+      animation: kenburns 20s ease-in-out infinite alternate;
+      -webkit-animation: kenburns 20s ease-in-out infinite alternate; }
+    .image-carousel img.img-secondary {
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: kenburns 20s ease-in-out infinite alternate-reverse;
+      -webkit-animation: kenburns 20s ease-in-out infinite alternate-reverse; }

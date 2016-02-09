@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var notify = require('gulp-notify');
 var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
 var mainBowerFiles = require('main-bower-files');
@@ -11,8 +12,11 @@ var nodeStatic = require('node-static');
 var http = require('http');
 
 var errorHandler = function(err) {
-	console.log("[SASS Error]".yellow + " " + err.toString().red);
-}
+  return notify({
+    title: "SASS Compile Error",
+    wait: false
+  }).write({message: err.message, wait: false});
+};
 
 gulp.task('bower-files', function() {
 	gulp.src(mainBowerFiles({ filter: /.*\.js$/i }))
@@ -26,8 +30,9 @@ gulp.task('bower-files', function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src('scss/main.scss')
-		.pipe(sass({ outputStyle: 'nested', onError: errorHandler }))
+	gulp.src('scss/main.scss')
+		.pipe(sass({ outputStyle: 'nested' })
+					.on('error', errorHandler))
 		.pipe(removeEmptyLines())
 		.pipe(gulp.dest('css'))
 		.pipe(livereload({ auto: false }));

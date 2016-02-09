@@ -14,12 +14,13 @@ body {
 main {
   width: 80%;
   max-width: 700px;
-  margin: 4rem auto 0;
+  margin: 2rem auto 0;
   padding-bottom: 4rem;
 }
 
 header {
-  background-color: $purple;
+  background-color: $darker-purple;
+  height: 42px;
   padding: 0;
   margin: 0;
 
@@ -37,7 +38,7 @@ header {
 
 h1, h2, h3 {
   font-family: $family-heading;
-  color: $dark-purple;
+  color: $darker-purple;
   margin-bottom: 0.2em;
   margin-top: 0.2em;
   &.script {
@@ -90,28 +91,35 @@ p {
     opacity: 0;
     //-webkit-transform: translateY(-0.75rem);
     //transform: translateY(-0.75rem);
-    -webkit-transform: scale(0.94);
-    transform: scale(0.94);
+    -webkit-transform: translateY(-0.75rem);
+    transform: translateY(-0.75rem);
   }
 
   100% {
     opacity: 1;
     //-webkit-transform: translateY(0);
     //transform: translateY(0);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .animated-view {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+
   &.ng-enter {
     animation: 0.35s pageIn ease-out;
     -webkit-animation: 0.35s pageIn ease-out;
   }
 }
 // Load after typekit
-.wf-loading .animated-view {
-  display: none;
+.wf-loading {
+  .animated-view, body > header {
+    display: none;
+  }
 }
 .wf-active .animated-view {
-  display: block;
+  .animated-view, body > header {
+    display: block;
+  }
 }
