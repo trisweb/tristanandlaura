@@ -46,24 +46,83 @@ nav {
   }
 
   a.menu {
-    height: 0;
-    position: absolute;
-    right: 1rem;
-    top: 0.55rem;
+    //position: absolute;
+    //right: 1rem;
+    //top: 0.45rem;
+    padding: 0.5rem 1rem;
+    text-align: right;
+    font-family: $family-sans;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 0.17em;
+    text-decoration: none;
+    color: white;
+    line-height: 1.1em;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
     img {
       width: 1.2rem;
+      vertical-align: middle;
+      position: relative;
+      top: -0.1rem;
     }
   }
 }
 
 // Media queries
+@media screen and (max-width: 850px) and (min-width: 641px) {
+  nav ul li a {
+    font-size: 0.74em;
+    padding: 0.7rem 0.5rem 0.5rem;
+    letter-spacing: 0;
+  }
+}
 @media screen and (max-width: 640px) {
   nav {
     a.menu {
       display: block !important;
+      width: 100%;
     }
     ul {
       display: none;
+      position: fixed;
+      top: 36px;
+      right: 0;
+      left: 0;
+    }
+
+    &.menu-visible {
+      transition: background-color 0.2s ease;
+      background-color: $darker-purple;
+      ul {
+        display: block;
+        background-color: $purple;
+        li {
+          display: block;
+          a {
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem 0.5rem;
+            width: 100%;
+            text-align: right;
+          }
+        }
+      }
+      a.menu {
+        opacity: 1;
+      }
+    }
+
+    ul.menu-visible-ul-add {
+      animation: pageIn 0.2s ease;
+    }
+    ul.menu-visible-ul-remove {
+      animation: pageIn 0.2s ease reverse;
     }
   }
 }

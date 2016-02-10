@@ -38,10 +38,26 @@ app
     restrict: 'EA',
     replace: true,
     templateUrl: 'js/templates/navigation.html',
-    controller: function($scope, $element) { }
+    controller: function($scope, $element) {
+      $scope.menuVisible = false;
+      $scope.toggleMenu = function() {
+        if ($scope.menuVisible) {
+          $scope.menuVisible = false;
+        } else {
+          $scope.menuVisible = true;
+        }
+      };
+
+      var onLinkClick = function(event) {
+        $scope.menuVisible = false;
+      };
+      $element.find("ul li a").on("click", onLinkClick);
+    }
   }
 })
 
+// Image Carousel directive with Ken Burns effect (in CSS)
+// By Tristan Harward (MIT License)
 .directive('imageCarousel', function($interval) {
   var DELAY = 5000;
 

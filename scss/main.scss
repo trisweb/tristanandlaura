@@ -17,7 +17,8 @@ $face-heading: "jubilat";
 //   rosario
 $face-body: "prenton";
 
-$family-heading: $face-heading, 'Garamond', 'Times New Roman', 'Times', serif;
+$family-serif: $face-heading, 'Garamond', 'Times New Roman', 'Times', serif;
+$family-heading: $family-serif;
 $family-script: $face-script, $family-heading;
 $family-body: $face-body, 'San Francisco Display', 'Helvetica', 'Lucida Grande', Arial, sans-serif;
 $family-sans: $family-body;
