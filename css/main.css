@@ -18,8 +18,8 @@ section.title h1 {
   line-height: 1em;
   margin-bottom: 1.5rem; }
 header {
-  background-color: #b3386a;
-  height: 42px;
+  background-color: #ab3665;
+  height: 40px;
   padding: 0;
   margin: 0; }
   header section {
@@ -32,7 +32,7 @@ header {
     margin: 0; }
 h1, h2, h3 {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
-  color: #b3386a;
+  color: #ab3665;
   margin-bottom: 0.2em;
   margin-top: 0.2em; }
   h1.script, h2.script, h3.script {
@@ -91,7 +91,7 @@ nav {
   background-color: #c74d7e;
   position: fixed;
   z-index: 1001;
-  box-shadow: 0 0.2rem 0.5rem -0.2rem rgba(179, 56, 106, 0.75);
+  box-shadow: 0 0.2rem 0.5rem -0.2rem rgba(171, 54, 101, 0.75);
   top: 0;
   left: 0;
   right: 0;
@@ -155,7 +155,7 @@ nav {
     left: 0; }
   nav.menu-visible {
     transition: background-color 0.2s ease;
-    background-color: #b3386a; }
+    background-color: #ab3665; }
     nav.menu-visible ul {
       display: block;
       background-color: #c74d7e; }
