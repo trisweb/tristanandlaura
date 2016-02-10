@@ -83,7 +83,8 @@ p {
 .wf-active .animated-view .animated-view, .wf-active .animated-view body > header {
   display: block; }
 .countdown {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  line-height: 1.6rem; }
   .countdown strong {
     font-size: 2rem;
     color: #c74d7e; }
@@ -202,3 +203,9 @@ nav {
       left: 0;
       animation: kenburns 20s ease-in-out infinite alternate-reverse;
       -webkit-animation: kenburns 20s ease-in-out infinite alternate-reverse; }
+@media screen and (max-width: 640px) {
+  .image-carousel {
+    margin-left: -10%;
+    margin-right: -10%;
+    width: 120%;
+    border: 0; } }

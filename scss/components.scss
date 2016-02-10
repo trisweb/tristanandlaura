@@ -2,6 +2,7 @@ $timing: cubic-bezier(0, 0.78, 0.4, 0.95);
 
 .countdown {
   font-size: 1.4rem;
+  line-height: 1.6rem;
   strong {
     font-size: 2rem;
     color: $purple;
@@ -170,5 +171,14 @@ nav {
       animation: kenburns 20s ease-in-out infinite alternate-reverse;
       -webkit-animation: kenburns 20s ease-in-out infinite alternate-reverse;
     }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .image-carousel {
+    margin-left: -10%;
+    margin-right: -10%;
+    width: 120%;
+    border: 0;
   }
 }
