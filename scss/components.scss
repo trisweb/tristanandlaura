@@ -70,7 +70,7 @@ nav {
       width: 1.2rem;
       vertical-align: middle;
       position: relative;
-      top: -0.1rem;
+      top: -0.12rem;
     }
   }
 }
@@ -120,9 +120,6 @@ nav {
 
     ul.menu-visible-ul-add {
       animation: pageIn 0.2s ease;
-    }
-    ul.menu-visible-ul-remove {
-      animation: pageIn 0.2s ease reverse;
     }
   }
 }

@@ -137,7 +137,7 @@ nav {
       width: 1.2rem;
       vertical-align: middle;
       position: relative;
-      top: -0.1rem; }
+      top: -0.12rem; }
 @media screen and (max-width: 850px) and (min-width: 641px) {
   nav ul li a {
     font-size: 0.74em;
@@ -169,9 +169,7 @@ nav {
     nav.menu-visible a.menu {
       opacity: 1; }
   nav ul.menu-visible-ul-add {
-    animation: pageIn 0.2s ease; }
-  nav ul.menu-visible-ul-remove {
-    animation: pageIn 0.2s ease reverse; } }
+    animation: pageIn 0.2s ease; } }
 @keyframes kenburns {
   0% {
     transform: scale(1.5, 1.5) translate(-8%, -4%);
