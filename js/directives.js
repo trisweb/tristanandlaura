@@ -92,7 +92,6 @@ app
       });
     },
     controller: function($scope, $element) {
-      $scope.windowHeight = $(window).height();
     }
   }
 })
