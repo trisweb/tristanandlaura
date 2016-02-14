@@ -21,7 +21,8 @@ header h1 {
   border-bottom: 1px dotted #ecd7e5; }
 main.home-page header h1 {
   font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
-  color: #a94e89; }
+  color: #a94e89;
+  border: none; }
 div.header-container {
   background-color: #7f3b67;
   height: 40px;
@@ -37,7 +38,7 @@ div.header-container {
     margin: 0; }
 h1, h2, h3 {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
-  color: #695160;
+  color: #605a5e;
   margin-bottom: 0.2em;
   margin-top: 0.2em; }
   h1.script, h2.script, h3.script {
@@ -72,7 +73,7 @@ blockquote {
     font-size: 1.3em; }
 p {
   line-height: 1.4em;
-  color: #a94e89; }
+  color: #7a7377; }
 @-webkit-keyframes pageIn {
   0% {
     opacity: 0;
@@ -188,7 +189,7 @@ nav {
   100% {
     transform: scale(1.25, 1.25) translate(5%, 7%); } }
 .image-carousel {
-  border: 1rem solid #F2F2F2;
+  border: 1rem solid #efeeee;
   background-color: #F2F2F2;
   box-shadow: 0 0.5rem 1rem -0.6rem #aaa;
   width: 100%;
