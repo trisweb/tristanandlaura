@@ -14,36 +14,46 @@ main {
   max-width: 700px;
   margin: 2rem auto 0;
   padding-bottom: 4rem; }
-section.title h1 {
+header h1 {
   line-height: 1em;
-  margin-bottom: 1.5rem; }
-header {
-  background-color: #ab3665;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.15em;
+  border-bottom: 1px dotted #ecd7e5; }
+main.home-page header h1 {
+  font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
+  color: #a94e89; }
+div.header-container {
+  background-color: #7f3b67;
   height: 40px;
   padding: 0;
   margin: 0; }
-  header section {
+  div.header-container section {
     width: 80%;
     max-width: 700px;
     margin: 0 auto;
     padding: 4rem 0; }
-  header h1 {
+  div.header-container h1 {
     color: white;
     margin: 0; }
 h1, h2, h3 {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
-  color: #ab3665;
+  color: #695160;
   margin-bottom: 0.2em;
   margin-top: 0.2em; }
   h1.script, h2.script, h3.script {
-    font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
-    color: #c74d7e; }
+    font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif; }
 h1 {
   font-weight: 300;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin-bottom: 0; }
 h2 {
   font-weight: 300;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-bottom: 0.4em;
+  margin-top: 0;
+  color: #a94e89; }
+  h2.script {
+    font-size: 1.7rem; }
 h3 {
   font-weight: 600;
   font-size: 1.3rem; }
@@ -58,11 +68,11 @@ blockquote {
     line-height: 1.4em; }
   blockquote footer {
     font-weight: 200;
-    color: #c74d7e;
+    color: #a94e89;
     font-size: 1.3em; }
 p {
   line-height: 1.4em;
-  color: #c74d7e; }
+  color: #a94e89; }
 @-webkit-keyframes pageIn {
   0% {
     opacity: 0;
@@ -87,12 +97,12 @@ p {
   line-height: 1.6rem; }
   .countdown strong {
     font-size: 2rem;
-    color: #c74d7e; }
+    color: #a94e89; }
 nav {
-  background-color: #c74d7e;
+  background-color: #a94e89;
   position: fixed;
   z-index: 1001;
-  box-shadow: 0 0.2rem 0.5rem -0.2rem rgba(171, 54, 101, 0.75);
+  box-shadow: 0 0.2rem 0.5rem -0.2rem rgba(127, 59, 103, 0.75);
   top: 0;
   left: 0;
   right: 0;
@@ -118,7 +128,7 @@ nav {
         transition: all 0.1s ease; }
         nav ul li a:hover {
           background-color: rgba(255, 255, 255, 0.7);
-          color: #c74d7e; }
+          color: #a94e89; }
   nav a.menu {
     padding: 0.5rem 1rem;
     text-align: right;
@@ -156,10 +166,10 @@ nav {
     left: 0; }
   nav.menu-visible {
     transition: background-color 0.2s ease;
-    background-color: #ab3665; }
+    background-color: #7f3b67; }
     nav.menu-visible ul {
       display: block;
-      background-color: #c74d7e; }
+      background-color: #a94e89; }
       nav.menu-visible ul li {
         display: block; }
         nav.menu-visible ul li a {

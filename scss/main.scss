@@ -1,8 +1,13 @@
 // Colors
-$purple: rgb(199, 77, 126);
+$purple: rgb(169, 78, 137);
 $pale-purple: $purple;
-$darker-purple: darken($purple, 10%);
-$light-purple: lighten($purple, 63%); // Looking for rgb(251, 234, 247);
+$darker-purple: darken($purple, 12%);
+$light-purple: lighten($purple, 40%); // Looking for rgb(251, 234, 247);
+
+$gray-0: rgb(93, 76, 89);
+$gray-0: darken(desaturate($purple, 24%), 12%);
+$gray-1: lighten($gray-0, 10%);
+$gray-2: lighten($gray-0, 17%);
 
 // Flourish/fancy script typeface
 $face-script: "grafolita-script";
