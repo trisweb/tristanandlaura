@@ -3,6 +3,7 @@ $timing: cubic-bezier(0, 0.78, 0.4, 0.95);
 .countdown {
   font-size: 1.4rem;
   line-height: 1.6rem;
+  color: $gray-1;
   strong {
     font-size: 2rem;
     color: $purple;
@@ -138,7 +139,6 @@ nav {
 .image-carousel {
   border: 1rem solid $gray-7;
   background-color: #F2F2F2;
-  box-shadow: 0 0.5rem 1rem -0.6rem #aaa;
   width: 100%;
   overflow: hidden;
   position: relative;

@@ -23,8 +23,19 @@ main {
 }
 
 header {
+  width: 100%;
+  background-color: $gray-8;
+  padding: 1rem;
+  & > div {
+    width: 80%;
+    max-width: 700px;
+    margin: 1rem auto 0;
+  }
+
   h1 {
+    color: $darker-purple;
     line-height: 1em;
+    margin-top: 0;
     margin-bottom: 0.5rem;
     padding-bottom: 0.15em;
     border-bottom: 1px dotted $light-purple;
@@ -32,16 +43,31 @@ header {
 }
 
 main.home-page {
-  header h1 {
-    font-family: $family-script;
-    color: $purple;
-    border: none;
+  text-align: center;
+
+  header {
+    margin-bottom: 1.2rem;
+    background: none;
+    padding: 0;
+
+    h1 {
+      font-family: $family-script;
+      color: $purple;
+      border: none;
+    }
+
+    h2 {
+      font-family: $family-sans;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 1rem;
+    }
   }
 }
 
 div.header-container {
   background-color: $darker-purple;
-  height: 40px;
+  height: 38px;
   padding: 0;
   margin: 0;
 
@@ -74,12 +100,13 @@ h1 {
 }
 h2 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 0.4em;
   margin-top: 0;
   color: $purple;
   &.script {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    margin-top: -0.25rem;
   }
 }
 h3 {

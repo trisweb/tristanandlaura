@@ -96,4 +96,23 @@ app
   }
 })
 
+.directive('headerBlock', function($interval) {
+  return {
+    restrict: 'E',
+    replace: true,
+    scope: {
+      title: '@',
+      subtitle: '@'
+    },
+    template:
+    '<header>\
+      <div>\
+        <h1>{{title}}</h1>\
+        <h2 class="script">{{subtitle}}</h2>\
+      </div>\
+    </header>',
+    controller: function($scope, $element) { }
+  }
+})
+
 ;

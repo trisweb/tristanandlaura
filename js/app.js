@@ -40,8 +40,6 @@ var app = angular.module('Love', [
 })
 .controller('RegistryCtrl', function($scope) {
 })
-.controller('PhotosCtrl', function($scope) {
-})
 
 // Routes and Navigation
 .config(['$routeProvider', '$controllerProvider',
@@ -76,10 +74,6 @@ var app = angular.module('Love', [
       when('/registry', {
         templateUrl: 'js/views/registry.html',
         controller: 'RegistryCtrl'
-      }).
-      when('/photos', {
-        templateUrl: 'js/views/photos.html',
-        controller: 'PhotosCtrl'
       })
     ;
   }])

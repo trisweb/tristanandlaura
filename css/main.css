@@ -14,18 +14,39 @@ main {
   max-width: 700px;
   margin: 2rem auto 0;
   padding-bottom: 4rem; }
-header h1 {
-  line-height: 1em;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.15em;
-  border-bottom: 1px dotted #ecd7e5; }
-main.home-page header h1 {
-  font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
-  color: #a94e89;
-  border: none; }
+header {
+  width: 100%;
+  background-color: #f7f5f6;
+  padding: 1rem; }
+  header > div {
+    width: 80%;
+    max-width: 700px;
+    margin: 1rem auto 0; }
+  header h1 {
+    color: #7f3b67;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.15em;
+    border-bottom: 1px dotted #ecd7e5; }
+main.home-page {
+  text-align: center; }
+  main.home-page header {
+    margin-bottom: 1.2rem;
+    background: none;
+    padding: 0; }
+    main.home-page header h1 {
+      font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
+      color: #a94e89;
+      border: none; }
+    main.home-page header h2 {
+      font-family: "prenton", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 1rem; }
 div.header-container {
   background-color: #7f3b67;
-  height: 40px;
+  height: 38px;
   padding: 0;
   margin: 0; }
   div.header-container section {
@@ -49,12 +70,13 @@ h1 {
   margin-bottom: 0; }
 h2 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 0.4em;
   margin-top: 0;
   color: #a94e89; }
   h2.script {
-    font-size: 1.7rem; }
+    font-size: 1.4rem;
+    margin-top: -0.25rem; }
 h3 {
   font-weight: 600;
   font-size: 1.3rem; }
@@ -95,7 +117,8 @@ p {
   display: block; }
 .countdown {
   font-size: 1.4rem;
-  line-height: 1.6rem; }
+  line-height: 1.6rem;
+  color: #7a7377; }
   .countdown strong {
     font-size: 2rem;
     color: #a94e89; }
@@ -191,7 +214,6 @@ nav {
 .image-carousel {
   border: 1rem solid #efeeee;
   background-color: #F2F2F2;
-  box-shadow: 0 0.5rem 1rem -0.6rem #aaa;
   width: 100%;
   overflow: hidden;
   position: relative;
