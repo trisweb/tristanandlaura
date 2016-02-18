@@ -78,8 +78,9 @@ h2 {
     font-size: 1.4rem;
     margin-top: -0.25rem; }
 h3 {
-  font-weight: 600;
-  font-size: 1.3rem; }
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #605a5e; }
 h4, h5 {
   font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif; }
 blockquote {
@@ -93,9 +94,48 @@ blockquote {
     font-weight: 200;
     color: #a94e89;
     font-size: 1.3em; }
+article img {
+  border: 2px solid #d8d6d8; }
 p {
   line-height: 1.4em;
   color: #7a7377; }
+hr {
+  border: 0;
+  height: 0;
+  border-bottom: 2px solid #efeeee;
+  margin: 2rem 0; }
+table {
+  width: 100%;
+  border-collapse: collapse; }
+  table th, table td {
+    padding: 1rem 0.5rem 1rem 0;
+    text-align: left;
+    border: none;
+    border-bottom: 1px dotted #efeeee;
+    vertical-align: top; }
+  table th {
+    font-weight: bold;
+    color: #8c8589;
+    padding-right: 1rem;
+    font-size: 87%; }
+  table tr:first-child th, table tr:first-child td {
+    padding-top: 0.5rem; }
+.full {
+  width: 100%; }
+.half {
+  width: 50%; }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem; }
+  .row .column {
+    flex: 1;
+    padding: 0 1rem 1rem 0;
+    min-width: 260px; }
+.map {
+  border: 2px solid #efeeee; }
+  .map iframe {
+    margin-bottom: -0.3rem; }
 @-webkit-keyframes pageIn {
   0% {
     opacity: 0;

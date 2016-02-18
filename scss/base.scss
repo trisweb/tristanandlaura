@@ -110,8 +110,9 @@ h2 {
   }
 }
 h3 {
-  font-weight: 600;
-  font-size: 1.3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: $gray-0;
 }
 
 h4, h5 {
@@ -133,9 +134,71 @@ blockquote {
   }
 }
 
+article {
+  img {
+    border: 2px solid $gray-6;
+  }
+}
+
 p {
   line-height: 1.4em;
   color: $gray-1;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-bottom: 2px solid $gray-7;
+  margin: 2rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  th, td {
+    padding: 1rem 0.5rem 1rem 0;
+    text-align: left;
+    border: none;
+    border-bottom: 1px dotted $gray-7;
+    vertical-align: top;
+  }
+  th {
+    font-weight: bold;
+    color: $gray-2;
+    padding-right: 1rem;
+    font-size: 87%;
+  }
+  tr:first-child {
+    th, td {
+      padding-top: 0.5rem;
+    }
+  }
+}
+
+.full {
+  width: 100%;
+}
+.half {
+  width: 50%;
+}
+
+// Grid
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  .column {
+    flex: 1;
+    padding: 0 1rem 1rem 0;
+    min-width: 260px;
+  }
+}
+
+.map {
+  border: 2px solid $gray-7;
+  iframe {
+    margin-bottom: -0.3rem;
+  }
 }
 
 
