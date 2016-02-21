@@ -3,6 +3,8 @@ html {
   font-size: 16px;
   padding: 0;
   margin: 0;
+
+  width: 100%;
 }
 
 html * {
@@ -13,6 +15,7 @@ body {
   font-family: $family-body;
   padding: 0;
   margin: 0;
+  max-width: 100%;
 }
 
 main {
@@ -23,9 +26,9 @@ main {
 }
 
 header {
-  width: 100%;
   background-color: $gray-8;
-  padding: 1rem;
+  padding: 1rem 0;
+
   & > div {
     width: 80%;
     max-width: 700px;
@@ -39,6 +42,19 @@ header {
     margin-bottom: 0.5rem;
     padding-bottom: 0.15em;
     border-bottom: 1px dotted $light-purple;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 641px) {
+  main {
+    width: 80%;
+    max-width: 850px;
+  }
+}
+@media screen and (max-width: 640px) {
+  main {
+    width: 80%;
+    max-width: 640px;
   }
 }
 
@@ -184,13 +200,14 @@ table {
 
 // Grid
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  @include display(flex);
+  @include flex-wrap(wrap);
   margin-right: -1rem;
+
   .column {
-    flex: 1;
+    @include flex(1 1 auto);
     padding: 0 1rem 1rem 0;
-    min-width: 260px;
+    min-width: 16rem;
   }
 }
 
@@ -220,7 +237,7 @@ table {
     transform: translateY(0);
   }
 }
-.animated-view {
+.main-view {
   -webkit-transform-origin: top center;
   transform-origin: top center;
 
@@ -231,12 +248,12 @@ table {
 }
 // Load after typekit
 .wf-loading {
-  .animated-view, body > header {
+  .main-view, body > header {
     display: none;
   }
 }
-.wf-active .animated-view {
-  .animated-view, body > header {
+.wf-active .main-view {
+  .main-view, body > header {
     display: block;
   }
 }

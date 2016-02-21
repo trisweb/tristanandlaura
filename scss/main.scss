@@ -1,3 +1,5 @@
+@import "bower_components/bourbon/app/assets/stylesheets/bourbon";
+
 // Colors
 $purple: rgb(169, 78, 137);
 $pale-purple: $purple;
@@ -34,5 +36,5 @@ $family-script: $face-script, $family-heading;
 $family-body: $face-body, 'San Francisco Display', 'Helvetica', 'Lucida Grande', Arial, sans-serif;
 $family-sans: $family-body;
 
-@import 'base';
-@import 'components';
+@import "base";
+@import "components";

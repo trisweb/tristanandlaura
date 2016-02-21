@@ -18,19 +18,23 @@ var errorHandler = function(err) {
   }).write({message: err.message, wait: false});
 };
 
-gulp.task('bower-files', function() {
-	gulp.src(mainBowerFiles({ filter: /.*\.js$/i }))
-		.pipe(concat('vendor.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('js'));
-
-	gulp.src(mainBowerFiles({ filter: /.*\.css$/i }))
+gulp.task('bower-css', function() {
+  return gulp.src(mainBowerFiles({ filter: /.*\.css$/i }))
 		.pipe(concat('vendor.css'))
 		.pipe(gulp.dest('css'));
 });
 
+gulp.task('bower-js', function() {
+	return gulp.src(mainBowerFiles({ filter: /.*\.js$/i }))
+		.pipe(concat('vendor.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('js'));
+});
+
+gulp.task('bower-files', ['bower-js', 'bower-css'])
+
 gulp.task('styles', function() {
-	gulp.src('scss/main.scss')
+	return gulp.src('scss/main.scss')
 		.pipe(sass({ outputStyle: 'nested' })
 					.on('error', errorHandler))
 		.pipe(removeEmptyLines())
