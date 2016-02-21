@@ -10,7 +10,8 @@ body {
   font-family: "prenton", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif;
   padding: 0;
   margin: 0;
-  max-width: 100%; }
+  max-width: 100%;
+  color: #504b4e; }
 main {
   width: 80%;
   max-width: 700px;
@@ -119,8 +120,7 @@ blockquote {
 article img {
   border: 2px solid #d8d6d8; }
 p {
-  line-height: 1.4em;
-  color: #7a7377; }
+  line-height: 1.4em; }
 hr {
   border: 0;
   height: 0;

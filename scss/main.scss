@@ -9,7 +9,8 @@ $yellow: rgb(245, 198, 23);
 $light-yellow: rgb(255, 237, 169);
 $pale-yellow: lighten($light-yellow, 8%);
 
-$gray-0: rgb(93, 76, 89);
+$darkgray-0: darken(desaturate($purple, 34%), 18%);
+
 $gray-0: darken(desaturate($purple, 34%), 12%);
 $gray-1: lighten($gray-0, 10%);
 $gray-2: lighten($gray-0, 17%);

@@ -16,6 +16,7 @@ body {
   padding: 0;
   margin: 0;
   max-width: 100%;
+  color: $darkgray-0;
 }
 
 main {
@@ -179,7 +180,6 @@ article {
 
 p {
   line-height: 1.4em;
-  color: $gray-1;
 }
 
 hr {
