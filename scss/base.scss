@@ -165,7 +165,7 @@ hr {
   border: 0;
   height: 0;
   border-bottom: 2px solid $gray-7;
-  margin: 2rem 0;
+  margin: 1rem 0 3rem;
 }
 
 table {
@@ -205,7 +205,7 @@ table {
   margin-right: -1rem;
 
   .column {
-    @include flex(1 1 auto);
+    @include flex(1 1 16rem);
     padding: 0 1rem 1rem 0;
     min-width: 16rem;
   }

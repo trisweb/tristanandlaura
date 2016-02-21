@@ -112,7 +112,7 @@ hr {
   border: 0;
   height: 0;
   border-bottom: 2px solid #efeeee;
-  margin: 2rem 0; }
+  margin: 1rem 0 3rem; }
 table {
   width: 100%;
   border-collapse: collapse; }
@@ -153,10 +153,10 @@ table {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -moz-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -webkit-flex: 1 1 16rem;
+    -moz-flex: 1 1 16rem;
+    -ms-flex: 1 1 16rem;
+    flex: 1 1 16rem;
     padding: 0 1rem 1rem 0;
     min-width: 16rem; }
 .map {
