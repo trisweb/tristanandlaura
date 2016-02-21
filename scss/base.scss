@@ -20,9 +20,13 @@ body {
 
 main {
   width: 80%;
-  max-width: 700px;
+  max-width: $main-column-width;
   margin: 2rem auto 0;
   padding-bottom: 4rem;
+
+  section {
+    margin-bottom: 1rem;
+  }
 }
 
 header {
@@ -31,7 +35,7 @@ header {
 
   & > div {
     width: 80%;
-    max-width: 700px;
+    max-width: $main-column-width;
     margin: 1rem auto 0;
   }
 
@@ -58,8 +62,10 @@ header {
   }
 }
 
+// Home page specific, which looks a bit different from the others.
 main.home-page {
   text-align: center;
+  padding-bottom: 1rem;
 
   header {
     margin-bottom: 1.2rem;
@@ -74,10 +80,25 @@ main.home-page {
 
     h2 {
       font-family: $family-sans;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       font-size: 1rem;
     }
+  }
+}
+
+// Also Home-specific
+// See also: components.scss > .image-carousel for the actual component.
+.slideshow-carousel {
+  background-color: $gray-7;
+  width: 100%;
+  text-align: center;
+  .image-carousel {
+    border: 1.5rem solid $gray-7;
+    margin: 0 auto;
+    max-width: $main-column-width;
+    background-color: $gray-5;
   }
 }
 
@@ -89,7 +110,7 @@ div.header-container {
 
   section {
     width: 80%;
-    max-width: 700px;
+    max-width: $main-column-width;
     margin: 0 auto;
     padding: 4rem 0;
   }
@@ -217,7 +238,6 @@ table {
     margin-bottom: -0.3rem;
   }
 }
-
 
 // Main view animation
 @-webkit-keyframes pageIn {

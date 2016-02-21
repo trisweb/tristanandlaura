@@ -1,12 +1,25 @@
 $timing: cubic-bezier(0, 0.78, 0.4, 0.95);
 
 .countdown {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: $gray-1;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: $gray-3;
   strong {
-    font-size: 2rem;
-    color: $purple;
+    display: inline-block;
+    width: 2.35rem;
+    text-align: right;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    color: $gray-0;
+    background-color: $light-yellow;
+    padding: 0.15rem 0.15rem 0.35rem 0;
+    border-radius: 0.2rem;
+  }
+  strong.days {
+    width: 3.4rem;
+  }
+  .date span {
+    white-space: nowrap;
   }
 }
 
@@ -137,12 +150,8 @@ nav {
 }
 
 .image-carousel {
-  border: 1rem solid $gray-7;
-  background-color: #F2F2F2;
-  width: 100%;
   overflow: hidden;
   position: relative;
-  margin-bottom: 1rem;
 
   img {
     margin-bottom: -0.5rem;
@@ -171,14 +180,5 @@ nav {
       animation: kenburns 20s ease-in-out infinite alternate-reverse;
       -webkit-animation: kenburns 20s ease-in-out infinite alternate-reverse;
     }
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .image-carousel {
-    margin-left: -10%;
-    margin-right: -10%;
-    width: 120%;
-    border: 0;
   }
 }

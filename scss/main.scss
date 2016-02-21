@@ -2,9 +2,12 @@
 
 // Colors
 $purple: rgb(169, 78, 137);
-$pale-purple: $purple;
 $darker-purple: darken($purple, 12%);
-$light-purple: lighten($purple, 40%); // Looking for rgb(251, 234, 247);
+$light-purple: lighten($purple, 40%);
+
+$yellow: rgb(245, 198, 23);
+$light-yellow: rgb(255, 237, 169);
+$pale-yellow: lighten($light-yellow, 8%);
 
 $gray-0: rgb(93, 76, 89);
 $gray-0: darken(desaturate($purple, 34%), 12%);
@@ -16,6 +19,9 @@ $gray-5: lighten($gray-0, 40%);
 $gray-6: lighten($gray-0, 48%);
 $gray-7: lighten($gray-0, 57%);
 $gray-8: rgb(247, 245, 246); // Lightest warm gray.
+
+// Widths and Layout
+$main-column-width: 700px;
 
 // Flourish/fancy script typeface
 $face-script: "grafolita-script";

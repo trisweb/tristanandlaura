@@ -16,6 +16,8 @@ main {
   max-width: 700px;
   margin: 2rem auto 0;
   padding-bottom: 4rem; }
+  main section {
+    margin-bottom: 1rem; }
 header {
   background-color: #f7f5f6;
   padding: 1rem 0; }
@@ -39,7 +41,8 @@ header {
     width: 80%;
     max-width: 640px; } }
 main.home-page {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 1rem; }
   main.home-page header {
     margin-bottom: 1.2rem;
     background: none;
@@ -50,9 +53,19 @@ main.home-page {
       border: none; }
     main.home-page header h2 {
       font-family: "prenton", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       font-size: 1rem; }
+.slideshow-carousel {
+  background-color: #efeeee;
+  width: 100%;
+  text-align: center; }
+  .slideshow-carousel .image-carousel {
+    border: 1.5rem solid #efeeee;
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: #c5c1c3; }
 div.header-container {
   background-color: #7f3b67;
   height: 38px;
@@ -183,12 +196,23 @@ table {
 .wf-active .main-view .main-view, .wf-active .main-view body > header {
   display: block; }
 .countdown {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #7a7377; }
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #9f9a9d; }
   .countdown strong {
-    font-size: 2rem;
-    color: #a94e89; }
+    display: inline-block;
+    width: 2.35rem;
+    text-align: right;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    color: #605a5e;
+    background-color: #ffeda9;
+    padding: 0.15rem 0.15rem 0.35rem 0;
+    border-radius: 0.2rem; }
+  .countdown strong.days {
+    width: 3.4rem; }
+  .countdown .date span {
+    white-space: nowrap; }
 nav {
   background-color: #a94e89;
   position: fixed;
@@ -279,12 +303,8 @@ nav {
   100% {
     transform: scale(1.25, 1.25) translate(5%, 7%); } }
 .image-carousel {
-  border: 1rem solid #efeeee;
-  background-color: #F2F2F2;
-  width: 100%;
   overflow: hidden;
-  position: relative;
-  margin-bottom: 1rem; }
+  position: relative; }
   .image-carousel img {
     margin-bottom: -0.5rem;
     width: 100%;
@@ -303,9 +323,3 @@ nav {
       left: 0;
       animation: kenburns 20s ease-in-out infinite alternate-reverse;
       -webkit-animation: kenburns 20s ease-in-out infinite alternate-reverse; }
-@media screen and (max-width: 640px) {
-  .image-carousel {
-    margin-left: -10%;
-    margin-right: -10%;
-    width: 120%;
-    border: 0; } }
