@@ -9,7 +9,9 @@ $yellow: rgb(245, 198, 23);
 $light-yellow: rgb(255, 237, 169);
 $pale-yellow: lighten($light-yellow, 8%);
 
+// I know these levels make no sense...
 $darkgray-0: darken(desaturate($purple, 34%), 18%);
+$darkgray-1: darken($darkgray-0, 6%);
 
 $gray-0: darken(desaturate($purple, 34%), 12%);
 $gray-1: lighten($gray-0, 10%);
@@ -20,6 +22,8 @@ $gray-5: lighten($gray-0, 40%);
 $gray-6: lighten($gray-0, 48%);
 $gray-7: lighten($gray-0, 57%);
 $gray-8: rgb(247, 245, 246); // Lightest warm gray.
+
+$shadow: rgba(0,0,0,0.25);
 
 // Widths and Layout
 $main-column-width: 700px;

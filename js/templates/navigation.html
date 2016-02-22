@@ -1,12 +1,12 @@
 <nav ng-class="{'menu-visible': menuVisible}">
   <ul ng-class="{'menu-visible-ul': menuVisible}">
-    <li><a href="#/">Home</a></li>
-    <li><a href="#/about">Our Story</a></li>
-    <li><a href="#/people">People</a></li>
-    <li><a href="#/events">Events</a></li>
-    <li><a href="#/travel">Travel &amp; Lodging</a></li>
-    <li><a href="#/activities">Things to Do</a></li>
-    <li><a href="#/registry">Registry</a></li>
+    <li><a href="#/" ng-class="{'active': currentPage == 'home'}">Home</a></li>
+    <li><a href="#/about" ng-class="{'active': currentPage == 'about'}">Our Story</a></li>
+    <li><a href="#/people" ng-class="{'active': currentPage == 'people'}">People</a></li>
+    <li><a href="#/events" ng-class="{'active': currentPage == 'events'}">Events</a></li>
+    <li><a href="#/travel" ng-class="{'active': currentPage == 'travel'}">Travel &amp; Lodging</a></li>
+    <li><a href="#/activities" ng-class="{'active': currentPage == 'activities'}">Things to Do</a></li>
+    <li><a href="#/registry" ng-class="{'active': currentPage == 'registry'}">Registry</a></li>
   </ul>
   <a href="" class="menu" style="display: none;"
     ng-click="toggleMenu()">Menu <img src="img/menu.svg"></a>

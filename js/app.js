@@ -24,9 +24,11 @@ var app = angular.module('Love', [
 // <li><a href="#/photos">Photos</a></li>
 
 .controller('Main', function($scope, $rootScope, $document, $timeout, $location) {
-  console.log("~~~~~~~~ <3 <3 <3 ~~~~~~~~");
+  console.log("~~~~~~~~ <3 Tristan ~*&*~ Laura <3 ~~~~~~~~");
+  console.log("If you're interested in the source code of this site, check out https://github.com/trisweb/tristanandlaura");
 })
 .controller('HomeCtrl', function($scope) {
+  $scope.currentPage = 'home';
 })
 .controller('AboutCtrl', function($scope) {
 })
@@ -49,31 +51,38 @@ var app = angular.module('Love', [
       // Home
       when('/', {
         templateUrl: 'js/views/home.html',
-        controller: 'HomeCtrl'
+        controller: 'HomeCtrl',
+        name: 'home'
       }).
       when('/about', {
         templateUrl: 'js/views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'AboutCtrl',
+        name: 'about'
       }).
       when('/people', {
         templateUrl: 'js/views/people.html',
-        controller: 'PeopleCtrl'
+        controller: 'PeopleCtrl',
+        name: 'people'
       }).
       when('/events', {
         templateUrl: 'js/views/events.html',
-        controller: 'EventsCtrl'
+        controller: 'EventsCtrl',
+        name: 'events'
       }).
       when('/travel', {
         templateUrl: 'js/views/travel.html',
-        controller: 'TravelCtrl'
+        controller: 'TravelCtrl',
+        name: 'travel'
       }).
       when('/activities', {
         templateUrl: 'js/views/activities.html',
-        controller: 'ActivitiesCtrl'
+        controller: 'ActivitiesCtrl',
+        name: 'activities'
       }).
       when('/registry', {
         templateUrl: 'js/views/registry.html',
-        controller: 'RegistryCtrl'
+        controller: 'RegistryCtrl',
+        name: 'registry'
       })
     ;
   }])

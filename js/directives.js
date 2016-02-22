@@ -33,13 +33,20 @@ app
   }
 })
 
-.directive('navigation', function($interval) {
+.directive('navigation', function($interval, $route, $rootScope) {
   return {
     restrict: 'EA',
     replace: true,
     templateUrl: 'js/templates/navigation.html',
     controller: function($scope, $element) {
       $scope.menuVisible = false;
+
+      // Handle page change to set the currently active page
+      $scope.currentPage = 'home';
+      $rootScope.$on('$routeChangeSuccess', function (e, current, pre) {
+        $scope.currentPage = current.name;
+      });
+
       $scope.toggleMenu = function() {
         if ($scope.menuVisible) {
           $scope.menuVisible = false;

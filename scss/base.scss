@@ -46,20 +46,9 @@ header {
     margin-top: 0;
     margin-bottom: 0.5rem;
     padding-bottom: 0.15em;
-    border-bottom: 1px dotted $light-purple;
   }
-}
-
-@media screen and (max-width: 850px) and (min-width: 641px) {
-  main {
-    width: 80%;
-    max-width: 850px;
-  }
-}
-@media screen and (max-width: 640px) {
-  main {
-    width: 80%;
-    max-width: 640px;
+  h1,h2 {
+    text-align: center;
   }
 }
 
@@ -67,6 +56,7 @@ header {
 main.home-page {
   text-align: center;
   padding-bottom: 1rem;
+  margin-top: 1.5rem;
 
   header {
     margin-bottom: 1.2rem;
@@ -77,13 +67,14 @@ main.home-page {
       font-family: $family-script;
       color: $purple;
       border: none;
+      margin-bottom: 0;
     }
 
     h2 {
       font-family: $family-sans;
-      font-weight: 500;
+      font-weight: 300;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
       font-size: 1rem;
     }
   }
@@ -92,14 +83,17 @@ main.home-page {
 // Also Home-specific
 // See also: components.scss > .image-carousel for the actual component.
 .slideshow-carousel {
-  background-color: $gray-7;
+  //background-color: $gray-7;
   width: 100%;
   text-align: center;
+  position: relative;
   .image-carousel {
-    border: 1.5rem solid $gray-7;
+    position: relative;
     margin: 0 auto;
-    max-width: $main-column-width;
+    width: 75%;
+    max-width: $main-column-width * (3/4);
     background-color: $gray-5;
+    box-shadow: 0 0.25rem 0.5rem -0.1rem $gray-4;
   }
 }
 
@@ -129,6 +123,7 @@ h1, h2, h3 {
   &.script {
     font-family: $family-script;
   }
+  text-align: center;
 }
 
 h1 {
@@ -142,6 +137,7 @@ h2 {
   margin-bottom: 0.4em;
   margin-top: 0;
   color: $purple;
+
   &.script {
     font-size: 1.4rem;
     margin-top: -0.25rem;
@@ -174,7 +170,7 @@ blockquote {
 
 article {
   img {
-    border: 2px solid $gray-6;
+    box-shadow: 0 0.15rem 0.3rem -0.05rem $shadow;
   }
 }
 
@@ -187,6 +183,57 @@ hr {
   height: 0;
   border-bottom: 2px solid $gray-7;
   margin: 1rem 0 3rem;
+}
+
+figure {
+  margin: 0 0 1rem;
+
+  img {
+    box-shadow: 0 0.15rem 0.3rem -0.05rem $shadow;
+  }
+  figcaption {
+    color: $gray-3;
+    font-size: 1.1em;
+    margin-top: 0.2em;
+  }
+
+  &.horizontal {
+    @include display(flex);
+
+    background-color: $gray-8;
+    box-shadow: 0 0.1rem 0.4rem -0.1rem $shadow;
+
+    img {
+      width: 50%;
+      height: 50%;
+      @include flex(1);
+      margin-right: 3%;
+    }
+    figcaption {
+      @include flex(1);
+      vertical-align: top;
+      color: $gray-0;
+      padding: 0.5em;
+      line-height: 1.1em;
+
+      em {
+        color: $gray-3;
+        font-size: 0.85em;
+        display: inline-block;
+        margin-top: 0.4em;
+      }
+    }
+
+    &.left {
+      img {
+        margin-right: 0;
+        margin-left: 3%;
+      }
+      figcaption {
+        text-align: right;
+      }
+    }
+  }
 }
 
 table {
@@ -218,17 +265,29 @@ table {
 .half {
   width: 50%;
 }
+.centered {
+  text-align: center;
+}
 
 // Grid
 .row {
   @include display(flex);
   @include flex-wrap(wrap);
+
   margin-right: -1rem;
 
   .column {
     @include flex(1 1 16rem);
     padding: 0 1rem 1rem 0;
     min-width: 16rem;
+  }
+
+  &.more-space {
+    margin-top: 1.5rem;
+    margin-right: -3rem;
+    .column {
+      padding-right: 3rem;
+    }
   }
 }
 
@@ -275,5 +334,18 @@ table {
 .wf-active .main-view {
   .main-view, body > header {
     display: block;
+  }
+}
+
+// Responsiveness
+@media screen and (max-width: 850px) and (min-width: 641px) {
+  .slideshow-carousel .image-carousel {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .slideshow-carousel .image-carousel {
+    width: 100%;
+    max-width: 100%;
   }
 }

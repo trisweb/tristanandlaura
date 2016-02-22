@@ -31,19 +31,13 @@ header {
     line-height: 1em;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    padding-bottom: 0.15em;
-    border-bottom: 1px dotted #ecd7e5; }
-@media screen and (max-width: 850px) and (min-width: 641px) {
-  main {
-    width: 80%;
-    max-width: 850px; } }
-@media screen and (max-width: 640px) {
-  main {
-    width: 80%;
-    max-width: 640px; } }
+    padding-bottom: 0.15em; }
+  header h1, header h2 {
+    text-align: center; }
 main.home-page {
   text-align: center;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  margin-top: 1.5rem; }
   main.home-page header {
     margin-bottom: 1.2rem;
     background: none;
@@ -51,22 +45,25 @@ main.home-page {
     main.home-page header h1 {
       font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
       color: #a94e89;
-      border: none; }
+      border: none;
+      margin-bottom: 0; }
     main.home-page header h2 {
       font-family: "prenton", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif;
-      font-weight: 500;
+      font-weight: 300;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
       font-size: 1rem; }
 .slideshow-carousel {
-  background-color: #efeeee;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .slideshow-carousel .image-carousel {
-    border: 1.5rem solid #efeeee;
+    position: relative;
     margin: 0 auto;
-    max-width: 700px;
-    background-color: #c5c1c3; }
+    width: 75%;
+    max-width: 525px;
+    background-color: #c5c1c3;
+    box-shadow: 0 0.25rem 0.5rem -0.1rem #b1acaf; }
 div.header-container {
   background-color: #7f3b67;
   height: 38px;
@@ -84,7 +81,8 @@ h1, h2, h3 {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
   color: #605a5e;
   margin-bottom: 0.2em;
-  margin-top: 0.2em; }
+  margin-top: 0.2em;
+  text-align: center; }
   h1.script, h2.script, h3.script {
     font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif; }
 h1 {
@@ -118,7 +116,7 @@ blockquote {
     color: #a94e89;
     font-size: 1.3em; }
 article img {
-  border: 2px solid #d8d6d8; }
+  box-shadow: 0 0.15rem 0.3rem -0.05rem rgba(0, 0, 0, 0.25); }
 p {
   line-height: 1.4em; }
 hr {
@@ -126,6 +124,57 @@ hr {
   height: 0;
   border-bottom: 2px solid #efeeee;
   margin: 1rem 0 3rem; }
+figure {
+  margin: 0 0 1rem; }
+  figure img {
+    box-shadow: 0 0.15rem 0.3rem -0.05rem rgba(0, 0, 0, 0.25); }
+  figure figcaption {
+    color: #9f9a9d;
+    font-size: 1.1em;
+    margin-top: 0.2em; }
+  figure.horizontal {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f7f5f6;
+    box-shadow: 0 0.1rem 0.4rem -0.1rem rgba(0, 0, 0, 0.25); }
+    figure.horizontal img {
+      width: 50%;
+      height: 50%;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      box-flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin-right: 3%; }
+    figure.horizontal figcaption {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      box-flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      vertical-align: top;
+      color: #605a5e;
+      padding: 0.5em;
+      line-height: 1.1em; }
+      figure.horizontal figcaption em {
+        color: #9f9a9d;
+        font-size: 0.85em;
+        display: inline-block;
+        margin-top: 0.4em; }
+    figure.horizontal.left img {
+      margin-right: 0;
+      margin-left: 3%; }
+    figure.horizontal.left figcaption {
+      text-align: right; }
 table {
   width: 100%;
   border-collapse: collapse; }
@@ -146,6 +195,8 @@ table {
   width: 100%; }
 .half {
   width: 50%; }
+.centered {
+  text-align: center; }
 .row {
   display: -webkit-box;
   display: -moz-box;
@@ -172,6 +223,11 @@ table {
     flex: 1 1 16rem;
     padding: 0 1rem 1rem 0;
     min-width: 16rem; }
+  .row.more-space {
+    margin-top: 1.5rem;
+    margin-right: -3rem; }
+    .row.more-space .column {
+      padding-right: 3rem; }
 .map {
   border: 2px solid #efeeee; }
   .map iframe {
@@ -195,22 +251,27 @@ table {
   display: none; }
 .wf-active .main-view .main-view, .wf-active .main-view body > header {
   display: block; }
+@media screen and (max-width: 850px) and (min-width: 641px) {
+  .slideshow-carousel .image-carousel {
+    width: 100%; } }
+@media screen and (max-width: 640px) {
+  .slideshow-carousel .image-carousel {
+    width: 100%;
+    max-width: 100%; } }
 .countdown {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   color: #9f9a9d; }
   .countdown strong {
     display: inline-block;
-    width: 2.35rem;
+    width: 2.15rem;
     text-align: right;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 0.2rem;
     color: #605a5e;
-    background-color: #ffeda9;
-    padding: 0.15rem 0.15rem 0.35rem 0;
     border-radius: 0.2rem; }
   .countdown strong.days {
-    width: 3.4rem; }
+    width: 3.2rem; }
   .countdown .date span {
     white-space: nowrap; }
 nav {
@@ -244,6 +305,8 @@ nav {
         nav ul li a:hover {
           background-color: rgba(255, 255, 255, 0.7);
           color: #a94e89; }
+        nav ul li a.active {
+          text-decoration: underline; }
   nav a.menu {
     padding: 0.5rem 1rem;
     text-align: right;
