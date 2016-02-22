@@ -26,6 +26,13 @@ var app = angular.module('Love', [
 .controller('Main', function($scope, $rootScope, $document, $timeout, $location) {
   console.log("~~~~~~~~ <3 Tristan ~*&*~ Laura <3 ~~~~~~~~");
   console.log("If you're interested in the source code of this site, check out https://github.com/trisweb/tristanandlaura");
+
+  // Scroll to top on route change:
+  $rootScope.$on("$routeChangeSuccess", function (event, currentRoute, previousRoute) {
+    if (previousRoute !== undefined) {
+      window.scrollTo(0, 0);
+    }
+  });
 })
 .controller('HomeCtrl', function($scope) {
   $scope.currentPage = 'home';
