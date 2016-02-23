@@ -1,6 +1,6 @@
 html {
   background-color: white;
-  font-size: 16px;
+  font-size: $base-font-size;
   padding: 0;
   margin: 0;
 
@@ -17,6 +17,10 @@ body {
   margin: 0;
   max-width: 100%;
   color: $darkgray-0;
+}
+
+.main-view {
+  margin-top: $header-height;
 }
 
 main {
@@ -56,7 +60,7 @@ header {
 main.home-page {
   text-align: center;
   padding-bottom: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 4rem;
 
   header {
     margin-bottom: 1.2rem;
@@ -99,9 +103,14 @@ main.home-page {
 
 div.header-container {
   background-color: $darker-purple;
-  height: 38px;
+  height: $header-height;
   padding: 0;
   margin: 0;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 
   section {
     width: 80%;

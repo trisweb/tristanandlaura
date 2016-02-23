@@ -43,7 +43,7 @@ nav {
         padding: 0.75rem 1rem 0.5rem;
         text-transform: uppercase;
         font-family: $family-sans;
-        color: white;
+        color: mix(white, $purple, 80%);
         text-decoration: none;
         font-size: 0.8em;
         font-weight: 400;
@@ -51,27 +51,29 @@ nav {
         transition: all 0.1s ease;
 
         &:hover {
-          background-color: rgba(255,255,255,0.7);
-          color: $purple;
+          background-color: $darker-purple;
+          color: white;
         }
 
         &.active {
-          text-decoration: underline;
+          color: white;
+          box-shadow: inset 0 -2px 0 $darker-purple;
+          &:hover {
+            color: white;
+            box-shadow: inset 0 -2px 0 darken($darker-purple, 10%);
+          }
         }
       }
     }
   }
 
   a.menu {
-    //position: absolute;
-    //right: 1rem;
-    //top: 0.45rem;
     padding: 0.5rem 1rem;
     text-align: right;
     font-family: $family-sans;
     text-transform: uppercase;
-    font-size: 1.2em;
-    font-weight: 100;
+    font-size: 1.1em;
+    font-weight: 400;
     letter-spacing: 0.17em;
     text-decoration: none;
     color: white;
@@ -119,7 +121,7 @@ nav {
       background-color: $darker-purple;
       ul {
         display: block;
-        background-color: $purple;
+        background-color: fade-out($purple, 0.06);
         li {
           display: block;
           a {
@@ -127,6 +129,14 @@ nav {
             padding: 0.5rem 1rem 0.5rem;
             width: 100%;
             text-align: right;
+            color: mix(white, $purple, 60%);
+            &.active {
+              color: white;
+              box-shadow: inset -4px 0 0 $darker-purple;
+              &:hover {
+                box-shadow: inset -4px 0 0 darken($darker-purple, 10%);
+              }
+            }
           }
         }
       }
