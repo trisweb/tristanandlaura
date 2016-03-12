@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  color: #504b4e; }
+  color: #24171a; }
 .main-view {
   margin-top: 38px; }
 main {
@@ -22,14 +22,14 @@ main {
   main section {
     margin-bottom: 1rem; }
 header {
-  background-color: #f7f5f6;
+  background-color: #f2f0f0;
   padding: 1rem 0; }
   header > div {
     width: 80%;
     max-width: 700px;
     margin: 1rem auto 0; }
   header h1 {
-    color: #7f3b67;
+    color: #451421;
     line-height: 1em;
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -46,7 +46,7 @@ main.home-page {
     padding: 0; }
     main.home-page header h1 {
       font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
-      color: #a94e89;
+      color: #752138;
       border: none;
       margin-bottom: 0; }
     main.home-page header h2 {
@@ -64,10 +64,10 @@ main.home-page {
     margin: 0 auto;
     width: 75%;
     max-width: 525px;
-    background-color: #c5c1c3;
-    box-shadow: 0 0.25rem 0.5rem -0.1rem #b1acaf; }
+    background-color: #b0a2a6;
+    box-shadow: 0 0.25rem 0.5rem -0.1rem #9d8c91; }
 div.header-container {
-  background-color: #7f3b67;
+  background-color: #b02d51;
   height: 38px;
   padding: 0;
   margin: 0;
@@ -86,7 +86,7 @@ div.header-container {
     margin: 0; }
 h1, h2, h3 {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
-  color: #605a5e;
+  color: #493e41;
   margin-bottom: 0.2em;
   margin-top: 0.2em;
   text-align: center; }
@@ -101,7 +101,7 @@ h2 {
   font-size: 1.7rem;
   margin-bottom: 0.4em;
   margin-top: 0;
-  color: #a94e89; }
+  color: #752138; }
   h2.script {
     font-size: 1.4rem;
     margin-top: -0.25rem; }
@@ -109,7 +109,7 @@ h3 {
   font-weight: 700;
   margin-bottom: 0.7em;
   font-size: 1.2rem;
-  color: #605a5e; }
+  color: #493e41; }
 h4, h5 {
   font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif; }
 blockquote {
@@ -121,7 +121,7 @@ blockquote {
     line-height: 1.4em; }
   blockquote footer {
     font-weight: 200;
-    color: #a94e89;
+    color: #752138;
     font-size: 1.3em; }
 article img {
   box-shadow: 0 0.15rem 0.3rem -0.05rem rgba(0, 0, 0, 0.25); }
@@ -130,14 +130,14 @@ p {
 hr {
   border: 0;
   height: 0;
-  border-bottom: 2px solid #efeeee;
+  border-bottom: 2px solid #d8d1d3;
   margin: 1rem 0 3rem; }
 figure {
   margin: 0 0 1rem; }
   figure img {
     box-shadow: 0 0.15rem 0.3rem -0.05rem rgba(0, 0, 0, 0.25); }
   figure figcaption {
-    color: #9f9a9d;
+    color: #8d797f;
     font-size: 1.1em;
     margin-top: 0.2em; }
   figure.horizontal {
@@ -148,7 +148,7 @@ figure {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    background-color: #f7f5f6;
+    background-color: #f2f0f0;
     box-shadow: 0 0.1rem 0.4rem -0.1rem rgba(0, 0, 0, 0.25); }
     figure.horizontal img {
       width: 50%;
@@ -170,11 +170,11 @@ figure {
       -ms-flex: 1;
       flex: 1;
       vertical-align: top;
-      color: #605a5e;
+      color: #493e41;
       padding: 0.5em;
       line-height: 1.1em; }
       figure.horizontal figcaption em {
-        color: #9f9a9d;
+        color: #8d797f;
         font-size: 0.85em;
         display: inline-block;
         margin-top: 0.4em; }
@@ -190,11 +190,11 @@ table {
     padding: 1rem 0.5rem 1rem 0;
     text-align: left;
     border: none;
-    border-bottom: 1px dotted #efeeee;
+    border-bottom: 1px dotted #d8d1d3;
     vertical-align: top; }
   table th {
     font-weight: bold;
-    color: #8c8589;
+    color: #78666b;
     padding-right: 1rem;
     font-size: 87%; }
   table tr:first-child th, table tr:first-child td {
@@ -237,7 +237,7 @@ table {
     .row.more-space .column {
       padding-right: 3rem; }
 .map {
-  border: 2px solid #efeeee; }
+  border: 2px solid #d8d1d3; }
   .map iframe {
     margin-bottom: -0.3rem; }
 @-webkit-keyframes pageIn {
@@ -269,24 +269,23 @@ table {
 .countdown {
   font-size: 1.2rem;
   line-height: 1.5rem;
-  color: #9f9a9d; }
+  color: #8d797f; }
   .countdown strong {
     display: inline-block;
     width: 2.15rem;
     text-align: right;
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
-    color: #605a5e;
+    color: #493e41;
     border-radius: 0.2rem; }
   .countdown strong.days {
     width: 3.2rem; }
   .countdown .date span {
     white-space: nowrap; }
 nav {
-  background-color: #a94e89;
+  background-color: #752138;
   position: fixed;
   z-index: 1001;
-  box-shadow: 0 0.2rem 0.5rem -0.2rem rgba(127, 59, 103, 0.75);
   top: 0;
   left: 0;
   right: 0;
@@ -304,21 +303,21 @@ nav {
         padding: 0.75rem 1rem 0.5rem;
         text-transform: uppercase;
         font-family: "prenton", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif;
-        color: #eedce7;
+        color: #d6bcc3;
         text-decoration: none;
         font-size: 0.8em;
         font-weight: 400;
         letter-spacing: 0.06em;
-        transition: all 0.1s ease; }
+        transition: background-color 0.1s ease, box-shadow 0.4s ease; }
         nav ul li a:hover {
-          background-color: #7f3b67;
+          background-color: #b02d51;
           color: white; }
         nav ul li a.active {
           color: white;
-          box-shadow: inset 0 -2px 0 #7f3b67; }
+          box-shadow: inset 0 -4px 0 #b02d51; }
           nav ul li a.active:hover {
             color: white;
-            box-shadow: inset 0 -2px 0 #5c2b4b; }
+            box-shadow: inset 0 -4px 0 #d04a6f; }
   nav a.menu {
     padding: 0.5rem 1rem;
     text-align: right;
@@ -356,10 +355,10 @@ nav {
     left: 0; }
   nav.menu-visible {
     transition: background-color 0.2s ease;
-    background-color: #7f3b67; }
+    background-color: #451421; }
     nav.menu-visible ul {
       display: block;
-      background-color: rgba(169, 78, 137, 0.94); }
+      background-color: rgba(117, 33, 56, 0.94); }
       nav.menu-visible ul li {
         display: block; }
         nav.menu-visible ul li a {
@@ -367,12 +366,12 @@ nav {
           padding: 0.5rem 1rem 0.5rem;
           width: 100%;
           text-align: right;
-          color: #ddb8d0; }
+          color: #c8a6af; }
           nav.menu-visible ul li a.active {
             color: white;
-            box-shadow: inset -4px 0 0 #7f3b67; }
+            box-shadow: inset -4px 0 0 #451421; }
             nav.menu-visible ul li a.active:hover {
-              box-shadow: inset -4px 0 0 #5c2b4b; }
+              box-shadow: inset -4px 0 0 #1d080e; }
     nav.menu-visible a.menu {
       opacity: 1; }
   nav ul.menu-visible-ul-add {

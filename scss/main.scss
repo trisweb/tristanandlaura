@@ -1,9 +1,12 @@
 @import "bower_components/bourbon/app/assets/stylesheets/bourbon";
 
 // Colors
-$purple: rgb(169, 78, 137);
+$plum: #631957;
+$wine: #752138; // Lighter: #7a2743;
+
+$purple: $wine; // rgb(169, 78, 137);
 $darker-purple: darken($purple, 12%);
-$light-purple: lighten($purple, 40%);
+$light-purple: saturate(lighten($purple, 14%), 3%);
 
 $yellow: rgb(245, 198, 23);
 $light-yellow: rgb(255, 237, 169);
@@ -13,7 +16,7 @@ $pale-yellow: lighten($light-yellow, 8%);
 $darkgray-0: darken(desaturate($purple, 34%), 18%);
 $darkgray-1: darken($darkgray-0, 6%);
 
-$gray-0: darken(desaturate($purple, 34%), 12%);
+$gray-0: darken(desaturate($purple, 48%), 3%);
 $gray-1: lighten($gray-0, 10%);
 $gray-2: lighten($gray-0, 17%);
 $gray-3: lighten($gray-0, 25%);
@@ -21,7 +24,7 @@ $gray-4: lighten($gray-0, 32%);
 $gray-5: lighten($gray-0, 40%);
 $gray-6: lighten($gray-0, 48%);
 $gray-7: lighten($gray-0, 57%);
-$gray-8: rgb(247, 245, 246); // Lightest warm gray.
+$gray-8: lighten($gray-0, 68%); // rgb(247, 245, 246); // Lightest warm gray.
 
 $shadow: rgba(0,0,0,0.25);
 
