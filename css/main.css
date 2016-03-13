@@ -40,7 +40,7 @@ header {
     padding: 0;
     max-height: 80vh;
     overflow-y: hidden;
-    box-shadow: 0 0 2rem rgba(69, 20, 33, 0.5); }
+    box-shadow: 0 0 2rem rgba(69, 20, 33, 0.2); }
     header.video > div {
       position: absolute;
       top: 4rem;

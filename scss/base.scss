@@ -59,7 +59,7 @@ header {
     padding: 0;
     max-height: 80vh;
     overflow-y: hidden;
-    box-shadow: 0 0 2rem fade-out($darker-purple, 0.5);
+    box-shadow: 0 0 2rem fade-out($darker-purple, 0.8);
     & > div {
       position: absolute;
       top: 4rem;
