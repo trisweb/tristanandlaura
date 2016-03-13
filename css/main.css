@@ -1,3 +1,47 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes pageIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-0.75rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+@-moz-keyframes pageIn {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-0.75rem); }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+@keyframes pageIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-0.75rem);
+    -moz-transform: translateY(-0.75rem);
+    -ms-transform: translateY(-0.75rem);
+    -o-transform: translateY(-0.75rem);
+    transform: translateY(-0.75rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
 html {
   background-color: white;
   font-size: 16px;
@@ -38,17 +82,36 @@ header {
     text-align: center; }
   header.video {
     padding: 0;
-    max-height: 80vh;
+    max-height: calc(90vh - 60px);
     overflow-y: hidden;
-    box-shadow: 0 0 2rem rgba(69, 20, 33, 0.2); }
+    box-shadow: 0 0 2rem rgba(69, 20, 33, 0.2);
+    background-color: #8DC9F4;
+    opacity: 0;
+    -webkit-animation: 2.8s fadeIn ease-out 0.5s forwards;
+    -moz-animation: 2.8s fadeIn ease-out 0.5s forwards;
+    animation: 2.8s fadeIn ease-out 0.5s forwards; }
+    header.video video {
+      margin-bottom: -5px; }
     header.video > div {
       position: absolute;
       top: 4rem;
       right: 0;
-      left: 0;
-      text-align: center; }
+      left: 0; }
       header.video > div h1 {
-        color: white; }
+        text-align: left;
+        color: #0e5b92;
+        text-shadow: 0 0 2rem white, 0.75px 0.75px 0 rgba(255, 255, 255, 0.5);
+        font-style: italic; }
+    @media screen and (max-width: 640px) {
+      header.video {
+        background-image: url(/img/video/lighthouse.still.jpg);
+        background-size: cover; }
+        header.video video {
+          visibility: hidden; }
+        header.video > div {
+          top: 2rem; }
+          header.video > div h1 {
+            font-size: 2.2rem; } }
 main.home-page {
   text-align: center;
   padding-bottom: 1rem;
@@ -254,21 +317,16 @@ table {
   border: 2px solid #d8d1d3; }
   .map iframe {
     margin-bottom: -0.3rem; }
-@-webkit-keyframes pageIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-0.75rem);
-    transform: translateY(-0.75rem); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
 .main-view {
   -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  -o-transform-origin: top center;
   transform-origin: top center; }
   .main-view.ng-enter {
-    animation: 0.35s pageIn ease-out;
-    -webkit-animation: 0.35s pageIn ease-out; }
+    -webkit-animation: 0.35s pageIn ease-out;
+    -moz-animation: 0.35s pageIn ease-out;
+    animation: 0.35s pageIn ease-out; }
 .wf-loading .main-view, .wf-loading body > header {
   display: none; }
 .wf-active .main-view .main-view, .wf-active .main-view body > header {

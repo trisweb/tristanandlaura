@@ -57,19 +57,43 @@ header {
 
   &.video {
     padding: 0;
-    max-height: 80vh;
+    max-height: calc(90vh - 60px);
     overflow-y: hidden;
     box-shadow: 0 0 2rem fade-out($darker-purple, 0.8);
+    background-color: $skyblue-0;
+
+    opacity: 0;
+    @include animation(2.8s fadeIn ease-out 0.5s forwards);
+
+    video {
+      margin-bottom: -5px;
+    }
     & > div {
       position: absolute;
       top: 4rem;
       right: 0;
       left: 0;
-      text-align: center;
       h1 {
-        color: white;
+        text-align: left;
+        color: $skyblue-1;
+        text-shadow: 0 0 2rem white, 0.75px 0.75px 0 rgba(255,255,255,0.5);
+        font-style: italic;
       }
     }
+
+    @media screen and (max-width: 640px) {
+      video { visibility: hidden; }
+      background-image: url(/img/video/lighthouse.still.jpg);
+      background-size: cover;
+
+      & > div {
+        top: 2rem;
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+    }
+
   }
 }
 
@@ -326,31 +350,10 @@ table {
   }
 }
 
-// Main view animation
-@-webkit-keyframes pageIn {
-  0% {
-    opacity: 0;
-    //-webkit-transform: translateY(-0.75rem);
-    //transform: translateY(-0.75rem);
-    -webkit-transform: translateY(-0.75rem);
-    transform: translateY(-0.75rem);
-  }
-
-  100% {
-    opacity: 1;
-    //-webkit-transform: translateY(0);
-    //transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
 .main-view {
-  -webkit-transform-origin: top center;
-  transform-origin: top center;
-
+  @include transform-origin(top center);
   &.ng-enter {
-    animation: 0.35s pageIn ease-out;
-    -webkit-animation: 0.35s pageIn ease-out;
+    @include animation(0.35s pageIn ease-out);
   }
 }
 // Load after typekit
