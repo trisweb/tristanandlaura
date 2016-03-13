@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  color: #24171a; }
+  color: #655a5d; }
 .main-view {
   margin-top: 38px; }
 main {
@@ -36,6 +36,19 @@ header {
     padding-bottom: 0.15em; }
   header h1, header h2 {
     text-align: center; }
+  header.video {
+    padding: 0;
+    max-height: 80vh;
+    overflow-y: hidden;
+    box-shadow: 0 0 2rem rgba(69, 20, 33, 0.5); }
+    header.video > div {
+      position: absolute;
+      top: 4rem;
+      right: 0;
+      left: 0;
+      text-align: center; }
+      header.video > div h1 {
+        color: white; }
 main.home-page {
   text-align: center;
   padding-bottom: 1rem;
@@ -193,10 +206,11 @@ table {
     border-bottom: 1px dotted #d8d1d3;
     vertical-align: top; }
   table th {
-    font-weight: bold;
+    font-weight: normal;
     color: #78666b;
     padding-right: 1rem;
-    font-size: 87%; }
+    font-size: 87%;
+    text-transform: uppercase; }
   table tr:first-child th, table tr:first-child td {
     padding-top: 0.5rem; }
 .full {

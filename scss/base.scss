@@ -54,6 +54,23 @@ header {
   h1,h2 {
     text-align: center;
   }
+
+  &.video {
+    padding: 0;
+    max-height: 80vh;
+    overflow-y: hidden;
+    box-shadow: 0 0 2rem fade-out($darker-purple, 0.5);
+    & > div {
+      position: absolute;
+      top: 4rem;
+      right: 0;
+      left: 0;
+      text-align: center;
+      h1 {
+        color: white;
+      }
+    }
+  }
 }
 
 // Home page specific, which looks a bit different from the others.
@@ -257,10 +274,11 @@ table {
     vertical-align: top;
   }
   th {
-    font-weight: bold;
-    color: $gray-2;
+    font-weight: normal;
+    color: rgb(120, 102, 107);
     padding-right: 1rem;
     font-size: 87%;
+    text-transform: uppercase;
   }
   tr:first-child {
     th, td {
