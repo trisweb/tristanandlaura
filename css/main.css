@@ -99,7 +99,7 @@ header {
       left: 0; }
       header.video > div h1 {
         text-align: left;
-        color: #0e5b92;
+        color: #1067a5;
         text-shadow: 0 0 2rem white, 0.75px 0.75px 0 rgba(255, 255, 255, 0.5);
         font-style: italic; }
     @media screen and (max-width: 640px) {

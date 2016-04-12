@@ -13,7 +13,7 @@ $light-yellow: rgb(255, 237, 169);
 $pale-yellow: lighten($light-yellow, 8%);
 
 $skyblue-0: #8DC9F4;
-$skyblue-1: darken($skyblue-0, 44%);
+$skyblue-1: darken($skyblue-0, 40%);
 
 // I know these levels make no sense...
 $darkgray-0: lighten(desaturate($purple, 50%), 8%);
