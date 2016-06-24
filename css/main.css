@@ -74,16 +74,15 @@ header {
     max-width: 700px;
     margin: 1rem auto 0; }
   header h1 {
-    color: #451421;
+    color: #752138;
     line-height: 1em;
     margin-top: 0;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.15em; }
+    padding-bottom: 0.5em; }
   header h1, header h2 {
     text-align: center; }
   header.video {
     padding: 0;
-    max-height: calc(90vh - 60px);
+    max-height: calc(80vh - 60px);
     overflow-y: hidden;
     box-shadow: 0 0 2rem rgba(69, 20, 33, 0.2);
     background-color: #8DC9F4;
@@ -101,7 +100,7 @@ header {
       header.video > div h1 {
         text-align: left;
         color: #1067a5;
-        text-shadow: 0 0 2rem white, 0.75px 0.75px 0 rgba(255, 255, 255, 0.5);
+        text-shadow: 0 0 1.5rem white, 1px 1px 0 rgba(255, 255, 255, 0.5);
         font-style: italic; }
     @media screen and (max-width: 640px) {
       header.video {
@@ -118,7 +117,7 @@ main.home-page {
   padding-bottom: 1rem;
   margin-top: 4rem; }
   main.home-page header {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.75em;
     background: none;
     padding: 0; }
     main.home-page header h1 {
@@ -132,6 +131,17 @@ main.home-page {
       text-transform: uppercase;
       letter-spacing: 0.04em;
       font-size: 1rem; }
+  @media screen and (max-width: 640px) {
+    main.home-page {
+      width: 94%;
+      margin-top: 3.25rem;
+      padding-bottom: 0.5rem; }
+      main.home-page header h1 {
+        font-size: 7.2vw; }
+      main.home-page header h2 {
+        font-size: 0.9rem; }
+      main.home-page .countdown {
+        font-size: 0.9rem; } }
 .slideshow-carousel {
   width: 100%;
   text-align: center;
@@ -164,7 +174,6 @@ div.header-container {
 h1, h2, h3 {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif;
   color: #493e41;
-  margin-bottom: 0.2em;
   margin-top: 0.2em;
   text-align: center; }
   h1.script, h2.script, h3.script {
@@ -176,7 +185,6 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 1.7rem;
-  margin-bottom: 0.4em;
   margin-top: 0;
   color: #752138; }
   h2.script {
@@ -189,6 +197,14 @@ h3 {
   color: #493e41; }
 h4, h5 {
   font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif; }
+a {
+  color: #cf2d5a;
+  transition: color 0.1s ease-in-out; }
+a.subtle {
+  font-size: 0.875em;
+  color: #8d797f; }
+a:hover {
+  color: #752138; }
 blockquote {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif; }
   blockquote p {
@@ -341,18 +357,15 @@ table {
     max-width: 100%; } }
 .countdown {
   font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: #8d797f; }
+  line-height: 1.5em; }
   .countdown strong {
     display: inline-block;
-    width: 2.15rem;
+    width: 1.15em;
     text-align: right;
-    font-size: 1.5rem;
-    margin-bottom: 0.2rem;
-    color: #493e41;
+    font-size: 1.3em;
     border-radius: 0.2rem; }
   .countdown strong.days {
-    width: 3.2rem; }
+    width: 1.4em; }
   .countdown .date span {
     white-space: nowrap; }
 nav {
@@ -414,7 +427,7 @@ nav {
 @media screen and (max-width: 850px) and (min-width: 641px) {
   nav ul li a {
     font-size: 0.74em;
-    padding: 0.7rem 0.5rem 0.5rem;
+    padding: 0.75rem 0.5rem 0.65rem;
     letter-spacing: 0; } }
 @media screen and (max-width: 640px) {
   nav a.menu {
@@ -476,3 +489,12 @@ nav {
       left: 0;
       animation: kenburns 20s ease-in-out infinite alternate-reverse;
       -webkit-animation: kenburns 20s ease-in-out infinite alternate-reverse; }
+.calendar-link {
+  display: inline-block;
+  padding-left: 1.5em;
+  background: no-repeat center left url(/img/calendar-icon-21.png);
+  background-size: auto 82%; }
+  .calendar-link.c21 {
+    background-image: url(/img/calendar-icon-21.png); }
+  .calendar-link.c22 {
+    background-image: url(/img/calendar-icon-22.png); }

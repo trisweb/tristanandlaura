@@ -46,11 +46,10 @@ header {
   }
 
   h1 {
-    color: $darker-purple;
+    color: $purple;
     line-height: 1em;
     margin-top: 0;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.15em;
+    padding-bottom: 0.5em;
   }
   h1,h2 {
     text-align: center;
@@ -58,7 +57,7 @@ header {
 
   &.video {
     padding: 0;
-    max-height: calc(90vh - 60px);
+    max-height: calc(80vh - 60px);
     overflow-y: hidden;
     box-shadow: 0 0 2rem fade-out($darker-purple, 0.8);
     background-color: $skyblue-0;
@@ -77,7 +76,7 @@ header {
       h1 {
         text-align: left;
         color: $skyblue-1;
-        text-shadow: 0 0 2rem white, 0.75px 0.75px 0 rgba(255,255,255,0.5);
+        text-shadow: 0 0 1.5rem white, 1px 1px 0 rgba(255,255,255,0.5);
         font-style: italic;
       }
     }
@@ -94,7 +93,6 @@ header {
         }
       }
     }
-
   }
 }
 
@@ -105,7 +103,7 @@ main.home-page {
   margin-top: 4rem;
 
   header {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.75em;
     background: none;
     padding: 0;
 
@@ -122,6 +120,24 @@ main.home-page {
       text-transform: uppercase;
       letter-spacing: 0.04em;
       font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 94%;
+    margin-top: 3.25rem;
+    padding-bottom: 0.5rem;
+
+    header {
+      h1 {
+        font-size: 7.2vw;
+      }
+      h2 {
+        font-size: 0.9rem;
+      }
+    }
+    .countdown {
+      font-size: 0.9rem;
     }
   }
 }
@@ -169,7 +185,7 @@ div.header-container {
 h1, h2, h3 {
   font-family: $family-heading;
   color: $gray-0;
-  margin-bottom: 0.2em;
+  //margin-bottom: 0.2em;
   margin-top: 0.2em;
   &.script {
     font-family: $family-script;
@@ -185,7 +201,6 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 1.7rem;
-  margin-bottom: 0.4em;
   margin-top: 0;
   color: $purple;
 
@@ -203,6 +218,18 @@ h3 {
 
 h4, h5 {
   font-family: $family-script;
+}
+
+a {
+  color: lighten(saturate($purple, 8%), 20%);
+  transition: color 0.1s ease-in-out;
+}
+a.subtle {
+  font-size: 0.875em;
+  color: $gray-3;
+}
+a:hover {
+  color: $purple;
 }
 
 blockquote {
@@ -380,4 +407,5 @@ table {
     width: 100%;
     max-width: 100%;
   }
+
 }

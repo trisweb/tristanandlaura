@@ -2,19 +2,16 @@ $timing: cubic-bezier(0, 0.78, 0.4, 0.95);
 
 .countdown {
   font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: $gray-3;
+  line-height: 1.5em;
   strong {
     display: inline-block;
-    width: 2.15rem;
+    width: 1.15em;
     text-align: right;
-    font-size: 1.5rem;
-    margin-bottom: 0.2rem;
-    color: $gray-0;
+    font-size: 1.3em;
     border-radius: 0.2rem;
   }
   strong.days {
-    width: 3.2rem;
+    width: 1.4em;
   }
   .date span {
     white-space: nowrap;
@@ -98,7 +95,7 @@ nav {
 @media screen and (max-width: 850px) and (min-width: 641px) {
   nav ul li a {
     font-size: 0.74em;
-    padding: 0.7rem 0.5rem 0.5rem;
+    padding: 0.75rem 0.5rem 0.65rem;
     letter-spacing: 0;
   }
 }
@@ -193,4 +190,14 @@ nav {
       -webkit-animation: kenburns 20s ease-in-out infinite alternate-reverse;
     }
   }
+}
+
+.calendar-link {
+  display: inline-block;
+  padding-left: 1.5em;
+  background: no-repeat center left url(/img/calendar-icon-21.png);
+  background-size: auto 82%;
+
+  &.c21 { background-image: url(/img/calendar-icon-21.png); }
+  &.c22 { background-image: url(/img/calendar-icon-22.png); }
 }
