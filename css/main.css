@@ -87,9 +87,9 @@ header {
     box-shadow: 0 0 2rem rgba(69, 20, 33, 0.2);
     background-color: #8DC9F4;
     opacity: 0;
-    -webkit-animation: 2.8s fadeIn ease-out 0.5s forwards;
-    -moz-animation: 2.8s fadeIn ease-out 0.5s forwards;
-    animation: 2.8s fadeIn ease-out 0.5s forwards; }
+    -webkit-animation: 2.2s fadeIn ease-out 0.5s forwards;
+    -moz-animation: 2.2s fadeIn ease-out 0.5s forwards;
+    animation: 2.2s fadeIn ease-out 0.5s forwards; }
     header.video video {
       margin-bottom: -5px; }
     header.video > div {
@@ -98,10 +98,13 @@ header {
       right: 0;
       left: 0; }
       header.video > div h1 {
+        opacity: 0;
+        -webkit-animation: 2s fadeIn ease-out 1s forwards;
+        -moz-animation: 2s fadeIn ease-out 1s forwards;
+        animation: 2s fadeIn ease-out 1s forwards;
+        font-weight: 100;
         text-align: left;
-        color: #1067a5;
-        text-shadow: 0 0 1.5rem white, 1px 1px 0 rgba(255, 255, 255, 0.5);
-        font-style: italic; }
+        color: #1067a5; }
     @media screen and (max-width: 640px) {
       header.video {
         background-image: url(/img/video/lighthouse.still.jpg);
@@ -112,6 +115,27 @@ header {
           top: 2rem; }
           header.video > div h1 {
             font-size: 2.2rem; } }
+footer {
+  margin-top: 5rem;
+  height: 4rem;
+  text-align: center;
+  border-top: 2px solid #f2f0f0;
+  position: relative; }
+  footer div {
+    display: inline-block;
+    background-color: #f2f0f0;
+    color: white;
+    font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif;
+    font-size: 2rem;
+    position: relative;
+    top: -1.24em;
+    border: 2px dotted white;
+    border-radius: 100%;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.4em; }
 main.home-page {
   text-align: center;
   padding-bottom: 1rem;
@@ -195,16 +219,35 @@ h3 {
   margin-bottom: 0.7em;
   font-size: 1.2rem;
   color: #493e41; }
-h4, h5 {
-  font-family: "grafolita-script", "jubilat", "Garamond", "Times New Roman", "Times", serif; }
+h4 {
+  font-weight: 400;
+  font-family: "prenton", "San Francisco Display", "Helvetica", "Lucida Grande", Arial, sans-serif;
+  font-size: 0.875em;
+  color: #c3b9bb;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25em; }
 a {
   color: #cf2d5a;
-  transition: color 0.1s ease-in-out; }
-a.subtle {
-  font-size: 0.875em;
-  color: #8d797f; }
-a:hover {
-  color: #752138; }
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  text-decoration: none; }
+  a.subtle {
+    font-size: 0.875em;
+    color: #8d797f;
+    text-decoration: underline; }
+  a:hover {
+    color: #752138;
+    text-decoration: underline; }
+  a.block-link {
+    display: block;
+    padding: 0 1rem 0 0; }
+    a.block-link:hover {
+      background-color: #f2f0f0; }
+.muted {
+  color: #d8d1d3; }
+em {
+  font-style: italic;
+  color: #b0a2a6; }
 blockquote {
   font-family: "jubilat", "Garamond", "Times New Roman", "Times", serif; }
   blockquote p {
@@ -216,19 +259,29 @@ blockquote {
     font-weight: 200;
     color: #752138;
     font-size: 1.3em; }
-article img {
-  box-shadow: 0 0.15rem 0.3rem -0.05rem rgba(0, 0, 0, 0.25); }
+article img, figure img, img.inline {
+  box-shadow: 0 0.15rem 0.25rem -0.1rem rgba(0, 0, 0, 0.25); }
+  article img.left, figure img.left, img.inline.left {
+    float: left;
+    max-width: 48%;
+    margin-right: 2%; }
+  article img.right, figure img.right, img.inline.right {
+    float: right;
+    max-width: 48%;
+    margin-left: 2%; }
+  article img.left, article img.right, figure img.left, figure img.right, img.inline.left, img.inline.right {
+    max-width: 48%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem; }
 p {
   line-height: 1.4em; }
 hr {
   border: 0;
   height: 0;
-  border-bottom: 2px solid #d8d1d3;
-  margin: 1rem 0 3rem; }
+  border-bottom: 2px solid #f2f0f0;
+  margin: 2.5rem 0; }
 figure {
   margin: 0 0 1rem; }
-  figure img {
-    box-shadow: 0 0.15rem 0.3rem -0.05rem rgba(0, 0, 0, 0.25); }
   figure figcaption {
     color: #8d797f;
     font-size: 1.1em;
@@ -293,6 +346,12 @@ table {
     text-transform: uppercase; }
   table tr:first-child th, table tr:first-child td {
     padding-top: 0.5rem; }
+  table tbody tr:first-child th, table tbody tr:first-child td {
+    padding-top: 1rem; }
+  table thead tr th {
+    padding-bottom: 0.5rem; }
+  table.table-middle th, table.table-middle td {
+    vertical-align: middle; }
 .full {
   width: 100%; }
 .half {
@@ -352,9 +411,16 @@ table {
   .slideshow-carousel .image-carousel {
     width: 100%; } }
 @media screen and (max-width: 640px) {
+  .responsive-narrow-hide {
+    display: none; }
   .slideshow-carousel .image-carousel {
     width: 100%;
-    max-width: 100%; } }
+    max-width: 100%; }
+  article img.left, article img.right, img.inline.left, img.inline.right {
+    max-width: none;
+    margin: 0;
+    float: none;
+    width: 100%; } }
 .countdown {
   font-size: 1.2rem;
   line-height: 1.5em; }
@@ -498,3 +564,7 @@ nav {
     background-image: url(/img/calendar-icon-21.png); }
   .calendar-link.c22 {
     background-image: url(/img/calendar-icon-22.png); }
+img.hotel-thumb {
+  width: 5rem;
+  vertical-align: middle;
+  margin-right: 0.5rem; }

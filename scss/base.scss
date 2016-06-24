@@ -63,7 +63,7 @@ header {
     background-color: $skyblue-0;
 
     opacity: 0;
-    @include animation(2.8s fadeIn ease-out 0.5s forwards);
+    @include animation(2.2s fadeIn ease-out 0.5s forwards);
 
     video {
       margin-bottom: -5px;
@@ -74,10 +74,12 @@ header {
       right: 0;
       left: 0;
       h1 {
+        opacity: 0;
+        @include animation(2s fadeIn ease-out 1s forwards);
+        font-weight: 100;
         text-align: left;
         color: $skyblue-1;
-        text-shadow: 0 0 1.5rem white, 1px 1px 0 rgba(255,255,255,0.5);
-        font-style: italic;
+        //text-shadow: 0 0 1.5rem white, 1px 1px 0 rgba(255,255,255,0.5);
       }
     }
 
@@ -94,6 +96,32 @@ header {
       }
     }
   }
+}
+
+footer {
+  margin-top: 5rem;
+  height: 4rem;
+  text-align: center;
+  border-top: 2px solid $gray-8;
+  position: relative;
+
+  div {
+    display: inline-block;
+    background-color: $gray-8;
+    color: white;
+    font-family: $family-script;
+    font-size: 2rem;
+    position: relative;
+    top: -1.24em;
+    border: 2px dotted white;
+    border-radius: 100%;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.4em;
+  }
+  
 }
 
 // Home page specific, which looks a bit different from the others.
@@ -216,20 +244,46 @@ h3 {
   color: $gray-0;
 }
 
-h4, h5 {
-  font-family: $family-script;
+h4 {
+  font-weight: 400;
+  font-family: $family-body;
+  font-size: 0.875em;
+  color: $gray-6;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25em;
 }
 
 a {
   color: lighten(saturate($purple, 8%), 20%);
-  transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  text-decoration: none;
+  &.subtle {
+    font-size: 0.875em;
+    color: $gray-3;
+    text-decoration: underline;
+  }
+  &:hover {
+    color: $purple;
+    text-decoration: underline;
+  }
+
+  &.block-link {
+    display: block;
+    padding: 0 1rem 0 0;
+    &:hover {
+      background-color: $gray-8;
+    }
+  }
 }
-a.subtle {
-  font-size: 0.875em;
-  color: $gray-3;
+
+.muted {
+  color: $gray-7;
 }
-a:hover {
-  color: $purple;
+
+em {
+  font-style: italic;
+  color: $gray-5;
 }
 
 blockquote {
@@ -247,9 +301,24 @@ blockquote {
   }
 }
 
-article {
-  img {
-    box-shadow: 0 0.15rem 0.3rem -0.05rem $shadow;
+// Images in content
+article img, figure img, img.inline {
+  box-shadow: 0 0.15rem 0.25rem -0.1rem $shadow;
+
+  &.left {
+    float: left;
+    max-width: 48%;
+    margin-right: 2%;
+  }
+  &.right {
+    float: right;
+    max-width: 48%;
+    margin-left: 2%;
+  }
+  &.left,&.right {
+    max-width: 48%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
   }
 }
 
@@ -260,16 +329,13 @@ p {
 hr {
   border: 0;
   height: 0;
-  border-bottom: 2px solid $gray-7;
-  margin: 1rem 0 3rem;
+  border-bottom: 2px solid $gray-8;
+  margin: 2.5rem 0;
 }
 
 figure {
   margin: 0 0 1rem;
 
-  img {
-    box-shadow: 0 0.15rem 0.3rem -0.05rem $shadow;
-  }
   figcaption {
     color: $gray-3;
     font-size: 1.1em;
@@ -335,6 +401,20 @@ table {
   tr:first-child {
     th, td {
       padding-top: 0.5rem;
+    }
+  }
+  tbody tr:first-child {
+    th, td {
+      padding-top: 1rem;
+    }
+  }
+  thead tr th {
+    padding-bottom: 0.5rem;
+  }
+
+  &.table-middle {
+    th,td {
+      vertical-align: middle;
     }
   }
 }
@@ -403,9 +483,19 @@ table {
   }
 }
 @media screen and (max-width: 640px) {
+  .responsive-narrow-hide {
+    display: none;
+  }
   .slideshow-carousel .image-carousel {
     width: 100%;
     max-width: 100%;
   }
-
+  article img, img.inline {
+    &.left,&.right {
+      max-width: none;
+      margin: 0;
+      float: none;
+      width: 100%;
+    }
+  }
 }
