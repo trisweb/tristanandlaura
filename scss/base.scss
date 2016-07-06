@@ -417,6 +417,15 @@ table {
       vertical-align: middle;
     }
   }
+
+  tr.heading-row {
+    td {
+    }
+    h3,h4 {
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
 }
 
 .full {

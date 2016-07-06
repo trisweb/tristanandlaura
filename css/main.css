@@ -352,6 +352,9 @@ table {
     padding-bottom: 0.5rem; }
   table.table-middle th, table.table-middle td {
     vertical-align: middle; }
+  table tr.heading-row h3, table tr.heading-row h4 {
+    margin-bottom: 0;
+    text-align: left; }
 .full {
   width: 100%; }
 .half {
