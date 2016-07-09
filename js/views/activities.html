@@ -1,5 +1,18 @@
 <header-block title="Activities" subtitle="Stuff to do around Charlotte"></header-block>
 <main>
+
+  <p>We've picked some of our favorite places, and had a lot of fun collecting all the listings, online reviews, and friends' recommendations to put together a nice list of things to do and places to visit in beautiful Charlotte, North Carolina. If you need any other suggestions, feel free to <a href="mailto:trisweb@gmail.com">email us</a> and we'd be happy to help!</p>
+
+  <div>
+    <h4>Categories</h4>
+    <span ng-repeat="category in activities" class="muted">
+      <span ng-if="!$first">&nbsp; &bull; &nbsp;</span>
+      <a href="" ng-click="scrollTo(underscore(category.name))">{{ category.name }}</a>
+    </span>
+  </div>
+
+  <br>
+
   <table>
   	<thead>
   		<tr>
@@ -7,21 +20,21 @@
   			<th>Region</th>
   			<th>Description</th>
   			<th>Link</th>
-  			<th style="width:3rem;white-space:nowrap;">Map It</th>
+  			<th style="width:2rem;">Map</th>
   		</tr>
   	</thead>
 
   	<tbody ng-repeat="category in activities">
 	  	<tr class="heading-row">
-	  		<td colspan="5"><h3>{{ category.name }}</h3></td>
+	  		<td colspan="5"><h3 id="{{ underscore(category.name) }}">{{ category.name }}</h3></td>
 	  	</tr>
 
   		<tr ng-repeat="place in category.places">
-  			<td>{{ place.name }}</td>
+  			<td><strong>{{ place.name }}</strong></td>
   			<td>{{ place.region }}</td>
   			<td>{{ place.description }}</td>
   			<td><a ng-href="{{ place.link }}" target="_blank">{{ place.link_text }}</a></td>
-  			<td><a ng-href="{{ place.map_link}} " target="_blank">
+  			<td class="centered"><a ng-href="{{ place.map_link}} " target="_blank">
   				<img src="img/map-marker.png" style="width: 22px;"></a>
   			</td>
   		</tr>
@@ -30,5 +43,5 @@
 
   <hr>
 
-  <iframe name="activitymap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208648.00478981357!2d-80.97961160465547!3d35.2033533851862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0x884650e6bf43d164!2sCharlotte%2C+NC!5e0!3m2!1sen!2sus!4v1467764742305" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vqet23bQbD24STRyQNBvIvfPVVQ" width="100%" height="480" frameborder="0"></iframe>
 </main>

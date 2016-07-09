@@ -46,44 +46,23 @@ var app = angular.module('Love', [
 .controller('TravelCtrl', function($scope) {
 })
 .controller('ActivitiesCtrl', function($scope) {
+  $scope.activities = ACTIVITY_LIST;
 
-  $scope.activities = [
-    { name: "Restaurants & Bars",
-      places: [
-        {
-          name: "Local Dish",
-          region: "Fort Mill",
-          description: "Upscale Southern",
-          link: "https://www.yelp.com/biz/local-dish-fort-mill",
-          link_text: "Yelp (4.5 Stars)",
-          map_link: "https://www.google.com/maps/place/Local+Dish+Restaurant/@35.0079254,-80.9463077,17z/data=!3m1!4b1!4m5!3m4!1s0x885685aaa17d9ff3:0x25bd67491eae1ce!8m2!3d35.007921!4d-80.944119"
-        }
-      ]
-    },
-    { name: "Shopping",
-      places: [
-
-      ]
-    },
-    { name: "Museums & Interesting Places",
-      places: [
-
-      ]
-    },
-    { name: "Breweries & Beer",
-      places: [
-
-      ]
-    },
-    { name: "Outdoors",
-      places: [
-
-      ]
+  $scope.scrollTo = function(id, event) {
+    elt = $('#'+id);
+    console.log(id, elt);
+    if (elt) {
+      $('html, body').animate({ scrollTop: elt.offset().top - 65 }, 300);
     }
+  };
 
-  ];
-
-
+  $scope.underscore = function(name) {
+    name = name.replace(/(?:^|\s)\w/g, function(match) {
+      return match.toLowerCase();
+    });
+    name = name.replace(/\W+/g, "_");
+    return name;
+  };
 })
 .controller('RegistryCtrl', function($scope) {
 })

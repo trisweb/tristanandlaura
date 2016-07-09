@@ -275,6 +275,8 @@ article img, figure img, img.inline {
     margin-bottom: 0.4rem; }
 p {
   line-height: 1.4em; }
+  p + table {
+    margin-top: 2rem; }
 hr {
   border: 0;
   height: 0;
@@ -336,14 +338,17 @@ table {
     padding: 1rem 0.5rem 1rem 0;
     text-align: left;
     border: none;
-    border-bottom: 1px dotted #d8d1d3;
+    border-bottom: 1px solid #f2f0f0;
     vertical-align: top; }
   table th {
     font-weight: normal;
     color: #78666b;
     padding-right: 1rem;
     font-size: 87%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border-bottom: 2px solid #f2f0f0; }
+  table td.centered {
+    text-align: center; }
   table tr:first-child th, table tr:first-child td {
     padding-top: 0.5rem; }
   table tbody tr:first-child th, table tbody tr:first-child td {
@@ -352,6 +357,10 @@ table {
     padding-bottom: 0.5rem; }
   table.table-middle th, table.table-middle td {
     vertical-align: middle; }
+  table tr.heading-row td {
+    background-color: #f2f0f0;
+    border-left: 0.5rem solid #c3b9bb;
+    padding-left: 1rem; }
   table tr.heading-row h3, table tr.heading-row h4 {
     margin-bottom: 0;
     text-align: left; }
@@ -361,6 +370,8 @@ table {
   width: 50%; }
 .centered {
   text-align: center; }
+  .centered h1, .centered h2, .centered h3, .centered h4 {
+    text-align: center !important; }
 .row {
   display: -webkit-box;
   display: -moz-box;
@@ -423,7 +434,12 @@ table {
     max-width: none;
     margin: 0;
     float: none;
-    width: 100%; } }
+    width: 100%; }
+  table {
+    font-size: 90%; }
+    table td, table th {
+      padding-left: 0.1em;
+      padding-right: 0.1em; } }
 .countdown {
   font-size: 1.2rem;
   line-height: 1.5em; }
