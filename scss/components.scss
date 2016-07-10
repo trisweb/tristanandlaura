@@ -245,6 +245,7 @@ a.registry-button {
   display: inline-block;
   padding: 1rem 1.5rem;
   font-size: 1.3em;
+  font-weight: 500;
   color: white;
   background-color: $purple;
   border-radius: 0.25rem;
@@ -257,5 +258,8 @@ a.registry-button {
     background-color: $light-purple;
     text-decoration: none;
     box-shadow: 0 0.5rem 1.5rem $gray-6;
+  }
+  &:active {
+    background-color: $purple;
   }
 }

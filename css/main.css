@@ -622,6 +622,7 @@ a.registry-button {
   display: inline-block;
   padding: 1rem 1.5rem;
   font-size: 1.3em;
+  font-weight: 500;
   color: white;
   background-color: #752138;
   border-radius: 0.25rem;
@@ -633,3 +634,5 @@ a.registry-button {
     background-color: #b02d51;
     text-decoration: none;
     box-shadow: 0 0.5rem 1.5rem #c3b9bb; }
+  a.registry-button:active {
+    background-color: #752138; }
