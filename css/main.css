@@ -618,7 +618,7 @@ img.hotel-thumb {
       color: white; }
     .button-bar > a:last-child {
       border-right: 0; }
-a.registry-button {
+a.big-button {
   display: inline-block;
   padding: 1rem 1.5rem;
   font-size: 1.3em;
@@ -630,9 +630,9 @@ a.registry-button {
   text-align: center;
   box-shadow: 0 0 0.5rem #d8d1d3;
   transition: all 0.3s ease-out; }
-  a.registry-button:hover {
+  a.big-button:hover {
     background-color: #b02d51;
     text-decoration: none;
     box-shadow: 0 0.5rem 1.5rem #c3b9bb; }
-  a.registry-button:active {
+  a.big-button:active {
     background-color: #752138; }
