@@ -47,6 +47,16 @@ var app = angular.module('Love', [
 })
 .controller('ActivitiesCtrl', function($scope) {
   $scope.activities = ACTIVITY_LIST;
+  $scope.activities.forEach(function(obj) {
+    // Category; sort places by region:
+    obj.places.sort(function(a, b) {
+      var regionA = a.region.toUpperCase();
+      var regionB = b.region.toUpperCase();
+      if (regionA < regionB) { return -1; }
+      if (regionA > regionB) { return 1; }
+      return 0;
+    });
+  });
 
   $scope.scrollTo = function(id, event) {
     elt = $('#'+id);

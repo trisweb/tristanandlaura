@@ -10,6 +10,7 @@
          ng-repeat="category in activities" 
          ng-click="scrollTo(underscore(category.name))">{{ category.name }}</a>
     </div>
+    <p>If you prefer, <a href="" ng-click="scrollTo('map')">check out the map of all these places</a> at the bottom of this page.</p>
   </div>
 
   <br>
@@ -45,7 +46,9 @@
   	</tbody>
   </table>
 
-  <hr>
+  <br>
+
+  <h4 id="map" style="margin-bottom: 0.5rem;">Map of all Places</h4>
 
   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vqet23bQbD24STRyQNBvIvfPVVQ" width="100%" height="480" frameborder="0"></iframe>
 </main>

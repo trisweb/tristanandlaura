@@ -110,32 +110,23 @@ ACTIVITY_LIST = [
 
   { name: "Outdoors",
     places: [
-      // Daniel Stowe Botanical Garden
-      {
-        name: "Daniel Stowe Botanical Garden",
-        region: "",
-        description: "",
-        link: "",
-        link_text: "",
-        map_link: ""
-      },
       // The Carolina Raptor Center
       {
-        name: "The Carolina Raptor Center",
-        region: "",
-        description: "",
-        link: "",
-        link_text: "",
-        map_link: ""
+        name: "The Carolina Raptor Center & Latta Plantation Nature Preserve",
+        region: "North-West of Charlotte",
+        description: "This center is the largest Raptor medical center in the United States, treating over 2,800 birds in the last few years. They house over 38 raptor species and have various programs every day. Alongside is also the Latta Plantation Nature Preserve, with walking trails and scenery.",
+        link: "http://www.carolinaraptorcenter.org/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Carolina+Raptor+Center/@35.3503602,-80.9205673,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa3a6fc854630be9!8m2!3d35.3503602!4d-80.9183786"
       },
       // Giordana Velodrome Bike Track
       {
         name: "Giordana Velodrome Bike Track",
-        region: "",
-        description: "",
-        link: "",
-        link_text: "",
-        map_link: ""
+        region: "Rock Hill",
+        description: "Located in the Riverwalk neighborhood of Rock Hill and operated by the city, the Giordana Velodrome is a world class cycling track. They have bike rentals and open cycling hours if you want to give it a shot.",
+        link: "http://www.cityofrockhill.com/departments/parks-recreation-tourism/parks-facilities/giordana-velodrome",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Giordana+Velodrome/@34.9764279,-80.9803533,17z/data=!3m1!4b1!4m5!3m4!1s0x885685fa99ccb085:0x5eaa3c57bbffa88c!8m2!3d34.9764235!4d-80.9781646"
       },
 
     ]
@@ -275,7 +266,7 @@ ACTIVITY_LIST = [
 			// Mellow Mushroom (Pizza, Various Locations) http://mellowmushroom.com/
       {
         name: "Mellow Mushroom",
-        region: "Downtown, South Park, or Ballantyne",
+        region: "Downtown, South Park, Rock Hill, or Ballantyne",
         description: "Mellow Mushroom is a southern chain of pizza and wholesome food restaurants that are really tasty. They always have pizza, salad, and good beer on tap.",
         link: "https://www.yelp.com/biz/mellow-mushroom-charlotte-6",
         link_text: "Yelp (4 Stars)",
@@ -317,6 +308,7 @@ ACTIVITY_LIST = [
         name: "Birdsong Brewing Co.",
         region: "North Charlotte",
         description: "Birdsong is one of the iconic Charlotte craft breweries you'll see on tap all over town. Taste their Higher Ground IPA, Lazy Bird Brown Ale, and limited releases at the brewery. Tap room is open all days, but for some reason tours are only Thursdays at 6:30 pm.",
+        ba_avg: 3.81,
         link: "https://birdsongbrewing.com/?age-verified=c9a777d7ae",
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/Birdsong+Brewing+Co./@35.2306564,-80.8287247,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a0748cf56823:0x8aec81ab4b52d5c6!8m2!3d35.230652!4d-80.826536"
@@ -326,6 +318,7 @@ ACTIVITY_LIST = [
         name: "Wooden Robot Brewing",
         region: "South End Charlotte",
         description: "An ultra micro craft brewery with a cool tap room, this place is doing great things with hops.",
+        ba_avg: 4.09,
         link: "http://wrb.enjoysweettea.com/?age-verified=dcf20fff27",
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/Wooden+Robot+Brewery/@35.216969,-80.8593187,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x1b211d4d9afbb725!8m2!3d35.216969!4d-80.85713"
@@ -335,6 +328,7 @@ ACTIVITY_LIST = [
         name: "The Olde Mecklenburg Brewery, Biergarten, and Brauhaus",
         region: "South End Charlotte",
         description: "Olde Meck is the oldest post-prohibition craft brewery in Charlotte, and focuses on German style beers. They have without a doubt the best biergarten and patio in Charlotte, and great tours as well.",
+        ba_avg: 3.94,
         link: "http://www.oldemeckbrew.com/",
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/The+Olde+Mecklenburg+Brewery/@35.187438,-80.8841503,17z/data=!3m1!4b1!4m5!3m4!1s0x88569f23974339db:0x87945c956da204ef!8m2!3d35.1873129!4d-80.8818008"
@@ -344,6 +338,7 @@ ACTIVITY_LIST = [
         name: "NoDa Brewing Co.",
         region: "North Charlotte",
         description: "North of the city, NoDa brewing is another Charlotte icon, setting the example of a thriving, growing craft brewery. Their north-of-charlotte complex includes two separate taprooms a few blocks from each other, each with different offerings.",
+        ba_avg: 3.91,
         link: "http://nodabrewing.com/home/",
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/NoDa+Brewing+Company/@35.2492129,-80.8174103,16.24z/data=!4m13!1m7!3m6!1s0x8856a074905ff2e9:0xfbe834a43967f4d3!2sNoDa+Brewing+Company!3b1!8m2!3d35.2401913!4d-80.8146569!3m4!1s0x0:0x5e6aae7b53e06fc4!8m2!3d35.2515694!4d-80.8124726"
@@ -353,6 +348,7 @@ ACTIVITY_LIST = [
         name: "The Unknown Brewing Co.",
         region: "South End Charlotte",
         description: "A quirky micro craft brewery with a cool tap room and several beers, this place looks like a great stop on the South End brewery circuit!",
+        ba_avg: 3.73,
         link: "http://www.unknownbrewing.com/",
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/The+Unknown+Brewing+Co./@35.220546,-80.8597671,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a1d58da79475:0x594cb954f7878a22!8m2!3d35.2205416!4d-80.8575784"
@@ -362,6 +358,7 @@ ACTIVITY_LIST = [
         name: "Sycamore Brewing",
         region: "South End Charlotte",
         description: "With 28 taps, this small south end brewery (right across from Atherton Mill) kills it with variety and deliciousness. Their brewing facility is in the same room as the taproom, and they have small plates and/or food trucks and a biergarten for nice days.",
+        ba_avg: 3.84,
         link: "http://sycamorebrew.com/on-tap/",
         link_text: "Website",
         map_link: "https://goo.gl/maps/vaoKtQk7f2y"
@@ -370,12 +367,12 @@ ACTIVITY_LIST = [
         name: "Red Clay Ciderworks",
         region: "South End Charlotte",
         description: "Charlotte's first craft ciderhouse, Red Clay is another great stop on the South End brewery loop, with a relaxed taproom featuring their cider, guest ciders, guest beer, and non-alcoholic beverages. Great for gluten free imbibing.",
+        ba_avg: 0,
         link: "http://www.redclayhardcider.com/",
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/Red+Clay+Ciderworks/@35.1949032,-80.8745766,17z/data=!4m5!3m4!1s0x88569f15db605717:0x3cbe9d12fcd645a5!8m2!3d35.1945726!4d-80.8747816!6m1!1e1"
       },
 			// Sugar Creek Brewing Co.
-      // LEFT OFF HERE
       {
         name: "Sugar Creek Brewing Co.",
         region: "South End Charlotte",
@@ -398,6 +395,7 @@ ACTIVITY_LIST = [
         name: "Full Spectrum Brewing",
         region: "Fort Mill",
         description: "Just up the street from Baxter Village town center, Full Spectrum promises “A beer for everyone on the spectrum.” Fort Mill's first craft brewery, it also doubles as a crossfit gym. Sounds like an interesting place. Only open Thursday, Friday, and Saturday, so check their web site or give them a ring first.",
+        ba_avg: 0,
         link: "http://www.fullspectrumbrewingco.com/home/",
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/Full+Spectrum+Brewing+Co./@35.0299171,-80.9704607,14.37z/data=!4m5!3m4!1s0x885685392d8e3fc5:0x233ac6539946fd21!8m2!3d35.0370584!4d-80.9615565"
@@ -407,10 +405,34 @@ ACTIVITY_LIST = [
         name: "Legal Remedy Brewing",
         region: "Rock Hill",
         description: "In the heart of downtown Rock Hill (just a few minutes from our wedding venue!), this micro craft brew-pub has an impressive selection of always-on-tap beers, a gorgeous patio, and plenty of great pub food, including poutine.",
+        ba_avg: 3.17,
         link: "http://legalremedybrewing.com/",
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/Legal+Remedy+Brewing/@34.9302893,-81.0273268,17z/data=!3m1!4b1!4m5!3m4!1s0x885688f93e32ff45:0x349322e1c7718f48!8m2!3d34.9302849!4d-81.0251381"
       },
+      // Free Range
+      {
+        name: "Free Range Brewing",
+        region: "North Charlotte",
+        description: "Up in the same area as NoDa and Birdsong, Free Range is a newer brewery occupying a warehouse, and serving up a handful of saisons, IPAs, and interesting unique brews.",
+        ba_avg: 3.71,
+        link: "http://legalremedybrewing.com/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Free+Range+Brewing/@35.2406046,-80.8133624,9z/data=!4m8!1m2!2m1!1sbrewery,+charlotte,+nc!3m4!1s0x8856a074fbac2b5b:0xfe2c30f8b076a9b5!8m2!3d35.2405006!4d-80.8132886"
+      },
     ]
   },
 ];
+
+/*
+
+{
+  name: "",
+  region: "",
+  description: "",
+  link: "",
+  link_text: "Website",
+  map_link: ""
+},
+
+*/
