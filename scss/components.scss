@@ -38,6 +38,7 @@ nav {
       a {
         display: inline-block;
         padding: 0.75rem 1rem 0.5rem;
+        min-height: 2.34rem;
         text-transform: uppercase;
         font-family: $family-sans;
         color: mix(white, $purple, 70%);
@@ -206,4 +207,27 @@ img.hotel-thumb {
   width: 5rem;
   vertical-align: middle;
   margin-right: 0.5rem;
+}
+
+.button-bar {
+  display: table;
+  width: 100%;
+
+  & > * {
+    display: table-cell;
+    padding: 0.5rem 0.25rem;
+    background-color: $gray-8;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  & > a {
+    color: $light-purple;
+    font-weight: 500;
+    &:hover {
+      background-color: $light-purple;
+      text-decoration: none;
+      color: white;
+    }
+  }
 }

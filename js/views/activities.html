@@ -5,10 +5,11 @@
 
   <div>
     <h4>Categories</h4>
-    <span ng-repeat="category in activities" class="muted">
-      <span ng-if="!$first">&nbsp; &bull; &nbsp;</span>
-      <a href="" ng-click="scrollTo(underscore(category.name))">{{ category.name }}</a>
-    </span>
+    <div class="button-bar">
+      <a href="" 
+         ng-repeat="category in activities" 
+         ng-click="scrollTo(underscore(category.name))">{{ category.name }}</a>
+    </div>
   </div>
 
   <br>
@@ -18,7 +19,7 @@
   		<tr>
   			<th>Place</th>
   			<th>Region</th>
-  			<th>Description</th>
+  			<th style="width:35%;">Description</th>
   			<th>Link</th>
   			<th style="width:2rem;">Map</th>
   		</tr>
@@ -34,8 +35,11 @@
   			<td>{{ place.region }}</td>
   			<td>{{ place.description }}</td>
   			<td><a ng-href="{{ place.link }}" target="_blank">{{ place.link_text }}</a></td>
-  			<td class="centered"><a ng-href="{{ place.map_link}} " target="_blank">
-  				<img src="img/map-marker.png" style="width: 22px;"></a>
+  			<td class="centered">
+          <a ng-href="{{ place.map_link }}" 
+             target="_blank" 
+             class="block-link">
+  				<img src="img/map-marker.png" style="width:22px;"></a>
   			</td>
   		</tr>
   	</tbody>

@@ -1,5 +1,4 @@
 ACTIVITY_LIST = [
-
   { name: "Shopping",
     places: [
       // The South End
@@ -77,7 +76,7 @@ ACTIVITY_LIST = [
     ]
   },
 
-  { name: "Museums & Interesting Places",
+  { name: "Museums & Activities",
     places: [
       // The Mint Museum
       {
@@ -111,15 +110,6 @@ ACTIVITY_LIST = [
 
   { name: "Outdoors",
     places: [
-      // The US National Whitewater Center
-      {
-        name: "The US National Whitewater Center",
-        region: "",
-        description: "",
-        link: "",
-        link_text: "",
-        map_link: ""
-      },
       // Daniel Stowe Botanical Garden
       {
         name: "Daniel Stowe Botanical Garden",
@@ -303,7 +293,7 @@ ACTIVITY_LIST = [
 
     ]
   },
-  { name: "Breweries & Beer",
+  { name: "Breweries & Beverages",
     places: [
       // Pintville (Epic Craft Beer Bar, Pineville) http://pintville.com/ 
       {
@@ -376,33 +366,50 @@ ACTIVITY_LIST = [
         link_text: "Website",
         map_link: "https://goo.gl/maps/vaoKtQk7f2y"
       },
+      {
+        name: "Red Clay Ciderworks",
+        region: "South End Charlotte",
+        description: "Charlotte's first craft ciderhouse, Red Clay is another great stop on the South End brewery loop, with a relaxed taproom featuring their cider, guest ciders, guest beer, and non-alcoholic beverages. Great for gluten free imbibing.",
+        link: "http://www.redclayhardcider.com/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Red+Clay+Ciderworks/@35.1949032,-80.8745766,17z/data=!4m5!3m4!1s0x88569f15db605717:0x3cbe9d12fcd645a5!8m2!3d35.1945726!4d-80.8747816!6m1!1e1"
+      },
 			// Sugar Creek Brewing Co.
       // LEFT OFF HERE
       {
         name: "Sugar Creek Brewing Co.",
-        region: "",
-        description: "",
-        link: "",
-        link_text: "",
-        map_link: ""
+        region: "South End Charlotte",
+        description: "Just a block away from Old Mecklenberg Brewery, Sugar Creek focuses on Belgian style beers, and also boasts a full kitchen with a great looking menu. And of course, patio seating.",
+        link: "http://sugarcreekbrewing.com/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Sugar+Creek+Brewing+Company/@35.1854339,-80.8832033,17z/data=!3m1!4b1!4m5!3m4!1s0x88569f2396d635a5:0x955fd7a1bb9a58b6!8m2!3d35.1854295!4d-80.8810146"
+      },
+      // Triple C Brewing
+      {
+        name: "Triple C Brewing Co.",
+        region: "South End Charlotte",
+        description: "This dog-friendly brew pub has a variety of beers, and it even has a great looking patio with games and umbrellas. Another good stop in the South End brewery community.",
+        link: "http://www.triplecbrewing.com/home",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Triple+C+Brewing+Company/@35.1963721,-80.8734561,14z/data=!4m5!3m4!1s0x0:0x6fdfc6aabe575234!8m2!3d35.2010999!4d-80.8695889"
       },
 			// Full Spectrum Brewing https://goo.gl/maps/T4kLuk6DYjQ2
       {
         name: "Full Spectrum Brewing",
-        region: "",
-        description: "",
-        link: "",
-        link_text: "",
-        map_link: "https://goo.gl/maps/T4kLuk6DYjQ2"
+        region: "Fort Mill",
+        description: "Just up the street from Baxter Village town center, Full Spectrum promises “A beer for everyone on the spectrum.” Fort Mill's first craft brewery, it also doubles as a crossfit gym. Sounds like an interesting place. Only open Thursday, Friday, and Saturday, so check their web site or give them a ring first.",
+        link: "http://www.fullspectrumbrewingco.com/home/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Full+Spectrum+Brewing+Co./@35.0299171,-80.9704607,14.37z/data=!4m5!3m4!1s0x885685392d8e3fc5:0x233ac6539946fd21!8m2!3d35.0370584!4d-80.9615565"
       },
 			// Legal Remedy Brewing: https://goo.gl/maps/Uug6RPGoxty (In Rock Hill)
       {
         name: "Legal Remedy Brewing",
         region: "Rock Hill",
-        description: "",
-        link: "",
-        link_text: "",
-        map_link: "https://goo.gl/maps/Uug6RPGoxty"
+        description: "In the heart of downtown Rock Hill (just a few minutes from our wedding venue!), this micro craft brew-pub has an impressive selection of always-on-tap beers, a gorgeous patio, and plenty of great pub food, including poutine.",
+        link: "http://legalremedybrewing.com/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Legal+Remedy+Brewing/@34.9302893,-81.0273268,17z/data=!3m1!4b1!4m5!3m4!1s0x885688f93e32ff45:0x349322e1c7718f48!8m2!3d34.9302849!4d-81.0251381"
       },
     ]
   },
