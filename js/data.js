@@ -67,7 +67,7 @@ ACTIVITY_LIST = [
       // Epicentre
       {
         name: "Epicentre",
-        region: "Downtown Charlotte",
+        region: "Uptown Charlotte",
         description: "Epicentre is a downtown urban mall with restaurants, shops, and entertainment. It's in the heart of Charlotte, so a good stop if you're exploring the downtown area.",
         link: "http://epicentrenc.com/",
         link_text: "Website",
@@ -81,7 +81,7 @@ ACTIVITY_LIST = [
       // The Mint Museum
       {
         name: "The Mint Museum Uptown",
-        region: "Downtown Charlotte",
+        region: "Uptown Charlotte",
         description: "The Mint has a beautiful mix of folk, modern, and historical art.",
         link: "http://www.mintmuseum.org/",
         link_text: "Website",
@@ -90,7 +90,7 @@ ACTIVITY_LIST = [
       // The NASCAR Hall of Fame
       {
         name: "NASCAR Hall of Fame",
-        region: "Downtown Charlotte",
+        region: "Uptown Charlotte",
         description: "The NASCAR hall of fame pays homage to Charlotte's storied racing history, and takes you behind the scenes of NASCAR with many interactive exhibits",
         link: "http://www.nascarhall.com/",
         link_text: "Website",
@@ -105,11 +105,35 @@ ACTIVITY_LIST = [
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/Carolinas+Aviation+Museum/@35.2195014,-80.9302973,17.23z/data=!4m5!3m4!1s0x8856989b67035a9f:0xd68f07b00b127800!8m2!3d35.2200519!4d-80.9299062"
       },
+      {
+        name: "Discovery Place Children's Museum",
+        region: "Uptown Charlotte",
+        description: "Step into a world where science is brought to life through interactive exhibits and explosive experiments with daily programs. They also have an IMAX dome.",
+        link: "http://www.discoveryplace.org/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Discovery+Place/@35.2290714,-80.8428557,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a024d5c1e267:0x785caa494a64faf3!8m2!3d35.229067!4d-80.840667"
+      },
+      {
+        name: "Levine Museum of the New South",
+        region: "Uptown Charlotte",
+        description: "Levine Museum of the New South is an interactive museum housing the nation's most comprehensive interpretation of post-Civil War Southern history.",
+        link: "http://www.museumofthenewsouth.org/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Levine+Museum+of+the+New+South/@35.2282102,-80.840939,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a024bc5716dd:0x709e0e7838b9b467!8m2!3d35.2282058!4d-80.8387503"
+      }
     ]
   },
 
   { name: "Outdoors",
     places: [
+      {
+        name: "Glencairn Gardens",
+        region: "Rock Hill",
+        description: "An 11-acre garden in the heart of Rock Hill, Glencairn Gardens has many walking paths through beautifully landscaped terrain. Free admission.",
+        link: "http://glencairn.yorkmg.org/home",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Glencairn+Garden/@34.9312099,-81.0264793,15.97z/data=!4m5!3m4!1s0x885688fa0ad10cdb:0xdacbc5488b57375!8m2!3d34.9323925!4d-81.0213727"
+      },
       // The Carolina Raptor Center
       {
         name: "The Carolina Raptor Center & Latta Plantation Nature Preserve",
@@ -128,6 +152,46 @@ ACTIVITY_LIST = [
         link_text: "Website",
         map_link: "https://www.google.com/maps/place/Giordana+Velodrome/@34.9764279,-80.9803533,17z/data=!3m1!4b1!4m5!3m4!1s0x885685fa99ccb085:0x5eaa3c57bbffa88c!8m2!3d34.9764235!4d-80.9781646"
       },
+      {
+        name: "Daniel Stowe Botanical Gardens",
+        region: "South-West of Charlotte",
+        description: "A small but pretty botanical garden with nature trails, fountains, a greenhouse conservatory, garden shop, and more.",
+        link: "http://www.dsbg.org/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Daniel+Stowe+Botanical+Garden/@35.1681294,-81.0532657,17z/data=!3m1!4b1!4m5!3m4!1s0x885696be7e5be187:0xc8d6769108161b53!8m2!3d35.168125!4d-81.051077"
+      },
+      {
+        name: "US National Whitewater Center",
+        region: "West of Charlotte",
+        description: "The USNWC is a veritable playground of outdoor activities, with climbing, hiking, mountain biking, ziplining, and of course river rafting and kayaking on over 1100 acres of property (note currently rafting on their man-made river is suspended due to water quality issues, check their site for status).",
+        link: "http://usnwc.org/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/U.S.+National+Whitewater+Center/@35.2725731,-81.0076694,16.49z/data=!4m5!3m4!1s0x8856bd20e3f7debd:0x9f98f6c378221e22!8m2!3d35.2725631!4d-81.005223"
+      },
+      {
+        name: "Charlotte Segway Tours",
+        region: "Uptown Charlotte",
+        description: "Laura and Tristan have done this Segway tour, and it was surprisingly fun! Riding a Segway is a blast if you haven't done it, and you'll see a big part of Uptown Charlotte and learn about the history and neighborhoods.",
+        link: "http://www.charlottenctours.com/segwaytours",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Charlotte+Segway+Tours/@35.2266125,-80.8449222,17z/data=!3m1!4b1!4m5!3m4!1s0x88569f7f34f8b355:0x7e624c38dcc01848!8m2!3d35.2266081!4d-80.8427335"
+      },
+      {
+        name: "Piedmont Medical Center Trail",
+        region: "Rock Hill",
+        description: "On the banks of the Catawba River in Rock Hill, directly beside our wedding venue, there's a very nice paved walking trail that's great for walking and getting outdoors in a beautiful setting.",
+        link: "http://www.riverwalkcarolinas.com/outdoors/piedmont-medical-center-trail/",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Piedmont+Medical+Center+Trail+Head/@34.9841303,-80.9739137,18.24z/data=!4m13!1m7!3m6!1s0x885685f072b135b9:0xa91949ac4bdc4452!2sRiverwalk+Parkway,+Rock+Hill,+SC+29730!3b1!8m2!3d34.9779432!4d-80.9786402!3m4!1s0x0:0xc4c5438ad048ee84!8m2!3d34.983706!4d-80.97298"
+      },
+      {
+        name: "Rock Hill Catawba River Kayak Tours",
+        region: "Rock Hill",
+        description: "The department of parks & recreation in Rock Hill leads kayak tours right next to our wedding venue! Sign up in advance for a 2-3 hour beginner's kayaking trip and enjoy the water.",
+        link: "http://www.cityofrockhill.com/departments/parks-recreation-tourism/a-l-l-outdoors/kayak-programs/catawba-river-kayak-tours",
+        link_text: "Website",
+        map_link: "https://www.google.com/maps/place/Piedmont+Medical+Center+Trail+Head/@34.9841303,-80.9739137,18.24z/data=!4m13!1m7!3m6!1s0x885685f072b135b9:0xa91949ac4bdc4452!2sRiverwalk+Parkway,+Rock+Hill,+SC+29730!3b1!8m2!3d34.9779432!4d-80.9786402!3m4!1s0x0:0xc4c5438ad048ee84!8m2!3d34.983706!4d-80.97298"
+      }
 
     ]
   },
@@ -204,7 +268,7 @@ ACTIVITY_LIST = [
 			// Cellar at Duckworth’s (Upscale American, Downtown) http://thecellaratduckworths.com/
       {
         name: "The Cellar at Duckworth's",
-        region: "Downtown Charlotte",
+        region: "Uptown Charlotte",
         description: "Stylish speakeasy with great cocktails",
         link: "https://www.yelp.com/biz/the-cellar-at-duckworths-charlotte-2",
         link_text: "Yelp (4.5 Stars)",
@@ -249,7 +313,7 @@ ACTIVITY_LIST = [
 			// Pizzeria Ommagio (Fancy Pizza, Downtown) http://pizzeriaomaggio.com/ 
       {
         name: "Pizzeria Ommagio",
-        region: "Downtown Charlotte",
+        region: "Uptown Charlotte",
         description: "Authentic Italian pizzeria with a wood-fired oven and beers on tap in a hip setting",
         link: "https://www.yelp.com/biz/pizzeria-omaggio-charlotte-2",
         link_text: "Yelp (4.5 Stars)",
@@ -280,6 +344,23 @@ ACTIVITY_LIST = [
         link: "https://www.yelp.com/biz/bad-daddys-burger-bar-ballantyne-charlotte-3",
         link_text: "Yelp (4 Stars)",
         map_link: "https://www.google.com/maps/search/Bad+Daddy's/@35.1332776,-80.9398257,11.46z"
+      },
+      {
+        name: "Z Bakery",
+        region: "Fort Mill",
+        description: "With lunch and brunch, as well as cakes and cupcakes, this cute vintage decorated bakery is always a great stop. $9 lunch special.",
+        link: "https://www.yelp.com/biz/z-bakery-fort-mill",
+        link_text: "Yelp (4.5 Stars)",
+        map_link: "https://www.google.com/maps/place/Z+Bakery/@35.0061361,-80.9450786,17z/data=!3m1!4b1!4m5!3m4!1s0x8856845532b38027:0xd582037bdae0a6a5!8m2!3d35.0061317!4d-80.9428899"
+      },
+
+      {
+        name: "The Pump House",
+        region: "Rock Hill",
+        description: "Just a short walk upriver from our wedding venue is this brand new, radically architected restaurant with relaxed dining and views of the Catawba river. Looks like it's worth checking out!",
+        link: "https://www.yelp.com/biz/the-pump-house-rock-hill",
+        link_text: "Yelp (3.5 Stars)",
+        map_link: "https://www.google.com/maps/place/The+Pump+House/@34.9849247,-80.9745515,18z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe9886dc6036dab91!8m2!3d34.9849235!4d-80.9737987"
       },
 
     ]

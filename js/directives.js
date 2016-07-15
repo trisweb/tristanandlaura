@@ -17,7 +17,7 @@ app
         $scope.hours = Math.floor((t/(1000*60*60)) % 24);
         $scope.days = Math.floor(t/(1000*60*60*24));
         return t;
-      }
+      };
       updateTime(thebigday);
 
       // Set up the interval
@@ -30,7 +30,7 @@ app
       }, 1000);
 
     }
-  }
+  };
 })
 
 .directive('navigation', function($interval, $route, $rootScope) {
@@ -60,7 +60,7 @@ app
       };
       $element.find("ul li a").on("click", onLinkClick);
     }
-  }
+  };
 })
 
 // Image Carousel directive with Ken Burns effect (in CSS)
@@ -100,7 +100,7 @@ app
     },
     controller: function($scope, $element) {
     }
-  }
+  };
 })
 
 .directive('headerBlock', function($interval) {
@@ -119,7 +119,7 @@ app
       </div>\
     </header>',
     controller: function($scope, $element) { }
-  }
+  };
 })
 
 ;

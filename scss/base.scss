@@ -58,6 +58,7 @@ header {
 
   &.video {
     padding: 0;
+    max-height: 300px;
     max-height: calc(80vh - 60px);
     overflow-y: hidden;
     box-shadow: 0 0 2rem fade-out($darker-purple, 0.8);
@@ -84,7 +85,9 @@ header {
     }
 
     @media screen and (max-width: 640px) {
-      video { visibility: hidden; }
+      video { display: none; }
+      height: 300px;
+      height: calc(70vh - 60px);
       background-image: url(/img/video/lighthouse.still.jpg);
       background-size: cover;
 
@@ -279,7 +282,7 @@ a {
 }
 
 .muted {
-  color: $gray-7;
+  color: $gray-6;
 }
 
 em {
@@ -428,6 +431,11 @@ table {
   tbody tr:first-child {
     th, td {
       padding-top: 1rem;
+    }
+  }
+  tbody tr:last-child {
+    th, td {
+      padding-bottom: 3rem;
     }
   }
   thead tr th {

@@ -83,6 +83,7 @@ header {
     text-align: center; }
   header.video {
     padding: 0;
+    max-height: 300px;
     max-height: calc(80vh - 60px);
     overflow-y: hidden;
     box-shadow: 0 0 2rem rgba(69, 20, 33, 0.2);
@@ -107,10 +108,12 @@ header {
         color: #1067a5; }
     @media screen and (max-width: 640px) {
       header.video {
+        height: 300px;
+        height: calc(70vh - 60px);
         background-image: url(/img/video/lighthouse.still.jpg);
         background-size: cover; }
         header.video video {
-          visibility: hidden; }
+          display: none; }
         header.video > div {
           top: 2rem; }
           header.video > div h1 {
@@ -245,7 +248,7 @@ a {
     a.block-link:hover {
       background-color: #f2f0f0; }
 .muted {
-  color: #d8d1d3; }
+  color: #c3b9bb; }
 em {
   font-style: italic;
   color: #b0a2a6; }
@@ -360,6 +363,8 @@ table {
     padding-top: 0.5rem; }
   table tbody tr:first-child th, table tbody tr:first-child td {
     padding-top: 1rem; }
+  table tbody tr:last-child th, table tbody tr:last-child td {
+    padding-bottom: 3rem; }
   table thead tr th {
     padding-bottom: 0.5rem; }
   table.table-middle th, table.table-middle td {

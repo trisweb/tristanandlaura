@@ -38,6 +38,7 @@ var app = angular.module('Love', [
   $scope.currentPage = 'home';
 })
 .controller('AboutCtrl', function($scope) {
+  var is_mobile = $('.video video').css('display') == 'none';
 })
 .controller('PeopleCtrl', function($scope) {
 })
