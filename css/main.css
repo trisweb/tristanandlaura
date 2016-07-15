@@ -170,6 +170,9 @@ main.home-page {
         font-size: 0.9rem; }
       main.home-page .countdown {
         font-size: 0.9rem; } }
+@media screen and (max-width: 640px) {
+  main.activities-page iframe {
+    height: 300px; } }
 .slideshow-carousel {
   width: 100%;
   text-align: center;
@@ -249,6 +252,10 @@ a {
       background-color: #f2f0f0; }
 .muted {
   color: #c3b9bb; }
+.nobreak {
+  white-space: nowrap; }
+.middle {
+  vertical-align: middle; }
 em {
   font-style: italic;
   color: #b0a2a6; }
@@ -434,6 +441,8 @@ table {
   display: none; }
 .wf-active .main-view .main-view, .wf-active .main-view body > header {
   display: block; }
+.responsive-small-show {
+  display: none; }
 @media screen and (max-width: 850px) and (min-width: 641px) {
   .slideshow-carousel .image-carousel {
     width: 100%; } }
@@ -449,10 +458,14 @@ table {
     float: none;
     width: 100%; }
   table {
-    font-size: 90%; }
+    font-size: 88%; }
     table td, table th {
-      padding-left: 0.1em;
-      padding-right: 0.1em; } }
+      padding-left: 0.25em;
+      padding-right: 0.25em; }
+      table td .responsive-small-hide, table td.responsive-small-hide, table th .responsive-small-hide, table th.responsive-small-hide {
+        display: none; }
+      table td .responsive-small-show, table th .responsive-small-show {
+        display: inline-block; } }
 .countdown {
   font-size: 1.2rem;
   line-height: 1.5em; }
@@ -623,6 +636,13 @@ img.hotel-thumb {
       color: white; }
     .button-bar > a:last-child {
       border-right: 0; }
+@media screen and (max-width: 640px) {
+  .button-bar {
+    display: block; }
+    .button-bar > * {
+      display: block; }
+    .button-bar > a {
+      border: none; } }
 a.big-button {
   display: inline-block;
   padding: 1rem 1.5rem;
