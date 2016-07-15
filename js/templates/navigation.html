@@ -1,12 +1,12 @@
 <nav ng-class="{'menu-visible': menuVisible}">
   <ul ng-class="{'menu-visible-ul': menuVisible}">
-    <li><a href="#/" ng-class="{'active': currentPage == 'home'}">Home</a></li><li
-      ><a href="#/about" ng-class="{'active': currentPage == 'about'}">Our Story</a></li
-      ><li><a href="#/people" ng-class="{'active': currentPage == 'people'}">People</a></li
-      ><li><a href="#/events" ng-class="{'active': currentPage == 'events'}">Events</a></li
-      ><li><a href="#/travel" ng-class="{'active': currentPage == 'travel'}">Travel &amp; Lodging</a></li
-      ><li><a href="#/activities" ng-class="{'active': currentPage == 'activities'}">Things to Do</a></li
-      ><li><a href="#/registry" ng-class="{'active': currentPage == 'registry'}">Registry</a></li>
+    <li><a ng-href="#/" ng-class="{'active': currentPage == 'home'}" ng-click="onLinkClick(event)">Home</a></li><li
+      ><a ng-href="#/about" ng-class="{'active': currentPage == 'about'}" ng-click="onLinkClick(event)">Our Story</a></li
+      ><li><a ng-href="#/people" ng-class="{'active': currentPage == 'people'}" ng-click="onLinkClick(event)">People</a></li
+      ><li><a ng-href="#/events" ng-class="{'active': currentPage == 'events'}" ng-click="onLinkClick(event)">Events</a></li
+      ><li><a ng-href="#/travel" ng-class="{'active': currentPage == 'travel'}" ng-click="onLinkClick(event)">Travel &amp; Lodging</a></li
+      ><li><a ng-href="#/activities" ng-class="{'active': currentPage == 'activities'}" ng-click="onLinkClick(event)">Things to Do</a></li
+      ><li><a ng-href="#/registry" ng-class="{'active': currentPage == 'registry'}" ng-click="onLinkClick(event)">Registry</a></li>
   </ul>
   <a href="" class="menu" style="display: none;"
     ng-click="toggleMenu()">Menu <img src="img/menu.svg"></a>

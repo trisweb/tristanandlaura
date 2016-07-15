@@ -55,10 +55,10 @@ app
         }
       };
 
-      var onLinkClick = function(event) {
+      $scope.onLinkClick = function(event) {
         $scope.menuVisible = false;
+        return true;
       };
-      $element.find("ul li a").on("click", onLinkClick);
     }
   };
 })
