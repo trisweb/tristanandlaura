@@ -9,7 +9,7 @@ if ('addEventListener' in document) {
 // Main App
 // This will have to be merged back with the stuff at home...
 var app = angular.module('Love', [
-  'ngRoute', 'ngAnimate'
+  'ngRoute', 'ngAnimate', 'angulartics', 'angulartics.google.analytics'
 ])
 
 // Controllers
@@ -32,6 +32,7 @@ var app = angular.module('Love', [
     if (previousRoute !== undefined) {
       window.scrollTo(0, 0);
     }
+    ll('tagEvent', 'Page View', {'page' : currentRoute.name });
   });
 })
 .controller('HomeCtrl', function($scope) {
@@ -61,10 +62,11 @@ var app = angular.module('Love', [
 
   $scope.scrollTo = function(id, event) {
     elt = $('#'+id);
-    console.log(id, elt);
     if (elt) {
       $('html, body').animate({ scrollTop: elt.offset().top - 65 }, 300);
     }
+    ll('tagEvent', 'Activity Clicked', {'category' : id });
+    ga('send', 'event', 'Button', 'click', 'Activity Link', id);
   };
 
   $scope.underscore = function(name) {

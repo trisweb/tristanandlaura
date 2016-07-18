@@ -15,6 +15,7 @@
     "angular-route": "~1.4.7",
     "angular-animate": "~1.4.7",
     "fastclick": "~1.0.6",
-    "bourbon": "~4.2.6"
+    "bourbon": "~4.2.6",
+    "angulartics-google-analytics": "~0.2.0"
   }
 }
