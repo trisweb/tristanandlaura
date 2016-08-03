@@ -65,7 +65,7 @@ app
 
 // Image Carousel directive with Ken Burns effect (in CSS)
 // By Tristan Harward (MIT License)
-.directive('imageCarousel', function($interval) {
+.directive('imageCarousel', function($interval, $document) {
   var DELAY = 5000;
 
   return {
@@ -89,6 +89,16 @@ app
           $scope.onSecondary = true;
         }
       };
+
+      $document.bind("keydown", function(event) {
+        if (event.which == 37) {
+          // Left
+          $scope.nextImage();
+        } else if (event.which == 39) {
+          // Right
+          $scope.nextImage();
+        }
+      });
 
       transclude($scope, function(clone) {
         $scope.images = clone.filter('img');
